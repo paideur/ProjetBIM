@@ -1,0 +1,170 @@
+/* Custom Stylesheet */
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  height: 100%;
+  font-family: Muli, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* ---- NabBar -----*/
+
+#mobile-brand-logo {
+  height: 110px;
+}
+
+ul#mobile-demo li#mobile-brand-logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  align-content: center;
+  height: 110px;
+  border: 2px solid red;
+}
+
+.brand-logo {
+  background-image: url(../img/logo.png);
+  width: 200px;
+  height: 110px;
+}
+
+nav {
+  height: 110px;
+}
+
+.nav-wrapper {
+  background-color: white;
+}
+
+.sidenav-trigger {
+  color: #DD1C51;
+}
+
+/* ---- SLIDER ---- */
+
+.slider .indicators .indicator-item.active {
+  background-color: #DD1C51;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: #DD1C51;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: #DD1C51;
+}
+
+.parallax-container {
+  height: 650px;
+}
+
+.carousel {
+  /* border: 1px solid red; */
+}
+
+.carousel .carousel-item {
+  /* width: 400px;
+  height: 400px; */
+  /* border: 1px solid red; */
+}
+
+/* --- Sites main styles --- */
+
+/* color BIM #DD1C51 */
+
+.text-medium {
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+
+#bim-home-services.row {
+  /* margin-right: 35px;
+  margin-left: 35px; */
+  padding-left: 205px;
+}
+
+.bim-slider-header {
+  font-size: 17px;
+  font-style: italic;
+  height: 40px;
+}
+
+.bim-header-separator {
+  border: 2px solid #DD1C51;
+  width: 100px;
+}
+
+.bim-btn-contact {
+  padding-top: 15px;
+}
+
+.bim-pink-color {
+  background-color: #DD1C51;
+}
+
+.bim-left-nav {
+  float: left;
+  padding-left: 35px;
+  /* border:1px solid red; */
+  width: 250px;
+  height: 110px;
+}
+
+.bim-right-nav {
+  float: right;
+  padding-right: 15px;
+  /* border:1px solid red; */
+  /* width:700px; */
+  height: 110px;
+}
+
+.bim-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bim-nav-item a:hover,
+.bim-nav-item a.active {
+  background-color: #DD1C51;
+}
+
+.bim-nav-list a:hover,
+.bim-nav-list a.active {
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.bim-nav-list a {
+  display: inline-block;
+  color: #202020;
+  /* background-color: #eee; */
+  background-color: white;
+  height: 70px;
+  padding: 7px 22px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bim-contact-image {
+  position: relative;
+  margin-top: 75px;
+}
+
+.bim-boxed-form {
+  position: relative;
+  padding-right: 30px;
+  border: 5px solid #f4f4f4;
+  margin-bottom: 20px;
+}

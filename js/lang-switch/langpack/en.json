@@ -1,0 +1,12 @@
+{
+	"token": {
+		"BIM": "BIM en",
+		"Services": "Services en",
+		"Nous, FasoBIM": "About Us, FasoBIM",
+		"Contact": "Contact us",
+		"Text a traduire": "Text to translate"
+	},
+	"regex": [
+		["My regex", "i", "someReplacement"]
+	]
+}
