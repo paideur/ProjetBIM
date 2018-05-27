@@ -1,12 +1,21 @@
 {
 	"token": {
-		"BIM": "BIM en",
-		"Services": "Services en",
-		"Nous, FasoBIM": "About Us, FasoBIM",
-		"Contact": "Contact us",
-		"Text a traduire": "Text to translate"
-	},
-	"regex": [
-		["My regex", "i", "someReplacement"]
-	]
+		"topBim": "The BIM out of energy services !",
+		"navFasoBIM": "ABOUT FasoBIM",
+		"bienVenueFasoBim": "Welcome on FasoBIM",
+		"slogan1": "FasoBIM, a recognize leadership on building digital transformation",
+		"contact1": "Keep in Touch",
+		"slogan2": "FasoBIM Consulting - the first reference on building innovation",
+		"sousSlogan2": "Energetic plan - Informations technologies - Optimisation",
+		"contact2": "Meet US",
+		"services": "Our services",
+		"aproposNous": "About Us",
+		"contacterNous": "Get In Touch",
+		"Nom": "Name",
+		"Telephone": "Phone number",
+		"erreurMail": "Please enter complet email with @",
+		"votreMessage": "Your message",
+		"Envoyer message": "Send message",
+		"partenaires": "Our collaborators"
+	}
 }

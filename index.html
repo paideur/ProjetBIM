@@ -20,8 +20,8 @@
     <nav>
         <div id="bim-topNav">
           <div class="bim-topNav-left valign-wrapper">
-              <a href="#">Le BIM au service de l'energie !</a>
-              <a id="contact" href="#Contact">Contact</a>
+              <a href="#" lang="fr" data-lang-token="topBim">Le BIM au service de l'energie !</a>
+              <a id="contact" href="#Contact" lang="fr">Contact</a>
           </div>
           <div class="bim-topNav-right valign-wrapper">
               <i class="material-icons">email</i>
@@ -39,13 +39,13 @@
             <a href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png"></a>
           </div>
           <div class="valign-wrapper bim-right-nav row hide-on-med-and-down">
-            <ul class="bim-nav-list bim-nav-item">
-              <a href="#Bim" class="waves-effect waves-light data-scroll">BIM</a>
-              <a href="#Services" class="waves-effect waves-light data-scroll">SERVICES</a>
-              <a href="#Aboutus" class="waves-effect waves-light data-scroll">NOUS, FasoBIM</a>
-              <a href="#Contact" class="waves-effect waves-light data-scroll">CONTACT</a>
-              <a href="#" class="waves-effect waves-light"><img src="img/fr.png"></a>
-              <a href="#" class="waves-effect waves-light"><img src="img/en.png"></a>
+            <ul class="bim-nav-list bim-nav-item valign-wrapper">
+              <a href="#Bim" class="waves-effect waves-light">BIM</a>
+              <a href="#Services" class="waves-effect waves-light ">SERVICES</a>
+              <a href="#Aboutus" class="waves-effect waves-light" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
+              <a href="#Contact" class="waves-effect waves-light">CONTACT</a>
+              <a href="#" class="waves-effect waves-light" onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"></a>
+              <a href="#" class="waves-effect waves-light" onclick="window.lang.change('en'); return false;"><img src="img/en.png"></a>
             </ul>
           </div>
         </div>
@@ -68,24 +68,24 @@
         <li>
           <img src="img/carousel/carousel11.jpeg"> 
           <div class="caption left-align">
-            <div lang="fr" class="bim-slider-header">Bienvenue sur FasoBIM</div>
+            <div lang="fr" class="bim-slider-header" lang="fr" data-lang-token="bienVenueFasoBim">Bienvenue sur FasoBIM</div>
             <div class="bim-header-separator"></div>
-            <h3 class="light grey-text text-lighten-3" lang="fr">FasoBIM vous accompagne dans la transition energetique du batiment</h3>
+            <h3 class="light grey-text text-lighten-3" lang="fr" data-lang-token="slogan1">FasoBIM vous accompagne dans la transition energetique du batiment</h3>
             <div class="bim-btn-contact">
-                <a class="waves-effect waves-light btn-large pulse">Contacter nous</a>
+                <a class="waves-effect waves-light btn-large pulse" lang="fr" data-lang-token="contact1">Contacter nous</a>
               </div>
           </div>
         </li>
-        <!-- <li>
+        <li>
           <img src="img/carousel/carousel21.jpg"> 
           <div class="caption center-align">
-            <h3>FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
-            <h5 class="light grey-text text-lighten-3">Plan strategique - technologies numeriques - optimisation</h5>
+            <h3 lang="fr" data-lang-token="slogan2">FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
+            <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5>
             <div class="bim-btn-contact">
-              <a class="waves-effect waves-light btn-large pulse">Prendre RDV</a>
+              <a class="waves-effect waves-light btn-large pulse" lang="fr" data-lang-token="contact2">Prendre RDV</a>
             </div>
           </div>
-        </li> -->
+        </li>
       </ul>
     </div>
   </section>
@@ -93,7 +93,7 @@
     <!-- ==========  SERVICES ========== -->
     <section id="Services">
       <div class="bim-section-separator"></div>
-      <h4 class="center-align">Nos Services</h4>
+      <h4 class="center-align" lang="fr" data-lang-token="services"> Nos Services</h4>
       <div id="bim-home-services" class="center-align row center">
         <div class="col s3">
           <article class="card">
@@ -101,7 +101,7 @@
               <img class="activator" src="img/services/service1.jpg">
             </div>
             <div class="card-content">
-              <h2 class="entry-title activator text-medium">Skilled Professionals</h2>
+              <h2 class="entry-title activator text-medium" lang="fr">Compétences Professionelles</h2>
             </div>
             <div class="card-reveal" style="transform: translateY(0px);">
               <span class="card-title close-button"> <i class="material-icons right">close</i></span>
@@ -149,21 +149,21 @@
     <!-- ==========  BIM ========== -->
     <section id="Bim">
         <div class="bim-section-separator"></div>
-        <h4 class="center-align">Le BIM</h4>
+        <h4 class="center-align" lang="fr">BIM</h4>
     </section>
     
 
     <!-- ==========  A propos de nous ========== -->
     <section id="Aboutus">
         <div class="bim-section-separator"></div>        
-        <h4 class="center-align">A propos de nous</h4>
+        <h4 class="center-align" lang="fr" data-lang-token="aproposNous">A propos de nous</h4>
     </section>
     
 
     <!-- ==========  Contact ========== -->
     <section id="Contact">
       <div class="bim-section-separator"></div>              
-      <h4 class="center-align">Contacter nous</h4>
+      <h4 class="center-align" lang="fr" data-lang-token="contacterNous">Contacter nous</h4>
       <div class="row parallax-container">
           <div class="parallax"><img src="img/bim-map.png"></div>
         <div class="col s4 bim-contact-image hide-on-small-only">
@@ -174,12 +174,12 @@
               <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Name</label>
+                <label for="icon_prefix" lang="fr">Nom</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">phone</i>
                 <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <label for="icon_telephone" lang="fr">Telephone</label>
               </div>
             </div>
             <div class="row">
@@ -188,8 +188,8 @@
                     <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
                       <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                      <span class="helper-text" data-error="Check Email" data-success="right">Enter complete email with @</span>
+                      <label for="email" lang="fr">Email</label>
+                      <span class="helper-text" data-error="Check Email" data-success="right" lang="fr" data-lang-token="erreurMail">Entrer un email complet avec @</span>
                     </div>
                   </div>
                 </form>
@@ -200,13 +200,13 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">mode_edit</i>
                       <textarea id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Your message</label>
+                      <label for="textarea1" lang="fr" data-lang-token="votreMessage">Votre message</label>
                     </div>
                   </div>
                 </form>
               </div>
               <div class="row">
-                <button id="contactbutton" class="btn waves-effect btn-large waves-light right" type="submit" name="action">Send message
+                <button id="contactbutton" class="btn waves-effect btn-large waves-light right" type="submit" name="action" lang="fr">Envoyer message
                     <i class="material-icons right">send</i>
                 </button>
               </div>
@@ -215,7 +215,7 @@
     </section>
     <!-- ==========  Nos partenaires ========== -->
     <div class="bim-section-separator"></div>
-    <h4 class="center-align">Nos partenaires</h4>
+    <h4 class="center-align" lang="fr" data-lang-token="partenaires">Nos partenaires</h4>
     <div class="carousel">
         <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
         <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
@@ -228,10 +228,31 @@
       </div>
 
     <!-- ==========  Footer ========== -->
-    <!-- <h4 class="center-align">Contacter nous</h4>
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/contact.jpg"></div>
-    </div> -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright FasoBIM
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
     
 

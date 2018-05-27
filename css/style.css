@@ -189,8 +189,9 @@ section#Home {
   color: #202020;
   /* background-color: #eee; */
   background-color: white;
-  height: 70px;
-  padding: 7px 22px;
+  height: 60px;
+  padding: 0px 22px;
+  text-align: center;
   margin: 4px;
   border-radius: 4px;
   cursor: pointer;

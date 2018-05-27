@@ -1,6 +1,11 @@
 (function ($) {
   $(function () {
 
+    $('.nav-wrapper ul a').click(function () {
+      $(this).siblings('a').removeClass('active');
+      $(this).addClass('active');
+    });
+
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.carousel').carousel({
