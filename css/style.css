@@ -7,6 +7,7 @@
  * Made By MaterializeCSS.com
  */
 
+html,
 body {
   height: 100%;
   font-family: Muli, sans-serif;
@@ -29,12 +30,12 @@ ul#mobile-demo li#mobile-brand-logo {
 }
 
 .brand-logo {
-  background-image: url(../img/logo.png);
   width: 200px;
   height: 110px;
 }
 
-nav {
+nav,
+.navbar-fixed {
   height: 110px;
 }
 
@@ -47,6 +48,10 @@ nav {
 }
 
 /* ---- SLIDER ---- */
+
+section#Home {
+  padding-top: 40px;
+}
 
 .slider .indicators .indicator-item.active {
   background-color: #DD1C51;
@@ -66,16 +71,6 @@ nav {
 
 .parallax-container {
   height: 650px;
-}
-
-.carousel {
-  /* border: 1px solid red; */
-}
-
-.carousel .carousel-item {
-  /* width: 400px;
-  height: 400px; */
-  /* border: 1px solid red; */
 }
 
 /* --- Sites main styles --- */
@@ -112,10 +107,43 @@ nav {
   background-color: #DD1C51;
 }
 
+.bim-center {
+  text-align: center;
+}
+
+#bim-topNav {
+  position: relative;
+  font-size: 13px;
+  color: #ffffff;
+  background: #222222;
+  height: 40px;
+}
+
+#bim-topNav a:hover {
+  cursor: pointer;
+  color: #DD1C51;
+}
+
+.bim-topNav-left {
+  float: left;
+  padding-left: 30px;
+  height: 40px;
+}
+
+.bim-topNav-left a#contact {
+  padding-left: 5px;
+}
+
+.bim-topNav-right {
+  float: right;
+  padding-right: 30px;
+  height: 40px;
+  width: 400px;
+}
+
 .bim-left-nav {
   float: left;
   padding-left: 35px;
-  /* border:1px solid red; */
   width: 250px;
   height: 110px;
 }
@@ -123,8 +151,6 @@ nav {
 .bim-right-nav {
   float: right;
   padding-right: 15px;
-  /* border:1px solid red; */
-  /* width:700px; */
   height: 110px;
 }
 
@@ -132,6 +158,19 @@ nav {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#bim-social-network {
+  height: 100%;
+  padding-left: 35px;
+}
+
+#bim-social-network a {
+  padding-left: 10px;
+}
+
+#bim-social-network a:hover {
+  cursor: pointer;
 }
 
 .bim-nav-item a:hover,
@@ -167,4 +206,8 @@ nav {
   padding-right: 30px;
   border: 5px solid #f4f4f4;
   margin-bottom: 20px;
+}
+
+.bim-section-separator {
+  height: 150px;
 }

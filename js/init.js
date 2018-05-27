@@ -1,5 +1,6 @@
 (function ($) {
   $(function () {
+
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.carousel').carousel({
@@ -9,8 +10,7 @@
       dist: 0,
       padding: 5
     });
-
-    autoplay()
+    autoplay();
 
     function autoplay() {
       $('.carousel').carousel('next');
@@ -42,9 +42,6 @@
           token: "083c3b59-11b8-4f62-8a60-dc3dabebc7f3"
         });
     });
-
-
-
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

@@ -16,27 +16,44 @@
 <body data-spy="scroll" data-offset="0" data-target="#theMenu" class="text-dark bg-light">
 
   <!-- ========== MENU ========== -->
+  <div class="navbar-fixed">
     <nav>
+        <div id="bim-topNav">
+          <div class="bim-topNav-left valign-wrapper">
+              <a href="#">Le BIM au service de l'energie !</a>
+              <a id="contact" href="#Contact">Contact</a>
+          </div>
+          <div class="bim-topNav-right valign-wrapper">
+              <i class="material-icons">email</i>
+              <a href="#Contact">contact@fasobim.com</a>
+              <div id="bim-social-network">
+                  <a target="_blank" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"></a>
+                  <a target="_blank" href="#Contact"><img src="img/twitter.png"></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"></a>
+              </div>
+          </div>
+        </div>
         <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <div class="bim-left-nav">
-            <a href="#Home" class="brand-logo hide-on-med-and-down smoothScroll"></a>
+            <a href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png"></a>
           </div>
-          <div class="valign-wrapper bim-right-nav row">
+          <div class="valign-wrapper bim-right-nav row hide-on-med-and-down">
             <ul class="bim-nav-list bim-nav-item">
               <a href="#Bim" class="waves-effect waves-light data-scroll">BIM</a>
               <a href="#Services" class="waves-effect waves-light data-scroll">SERVICES</a>
               <a href="#Aboutus" class="waves-effect waves-light data-scroll">NOUS, FasoBIM</a>
               <a href="#Contact" class="waves-effect waves-light data-scroll">CONTACT</a>
-              <a href="#Fr" class="waves-effect waves-light">FR</a>
-              <a href="#En" class="waves-effect waves-light">EN</a>
+              <a href="#" class="waves-effect waves-light"><img src="img/fr.png"></a>
+              <a href="#" class="waves-effect waves-light"><img src="img/en.png"></a>
             </ul>
           </div>
         </div>
       </nav>
+    </div>
       
       <ul class="sidenav" id="mobile-demo">      
-        <div id="mobile-brand-logo"><a href="#Home" class="smoothScroll"><img src="img/logo.png" style="padding-left: 20px"></a></div>
+        <div id="mobile-brand-logo"><a href="#" class="smoothScroll"><img src="img/logo.png" style="padding-left: 20px"></a></div>
         <li><a href="#Bim" class="smoothScroll">BIM</a></li>
         <li><a href="#Services" class="smoothScroll">Services</a></li>
         <li><a href="#FasoBim" class="smoothScroll">Nous, FasoBIM</a></li>
@@ -45,6 +62,7 @@
 
   <!-- ========== HOME SLIDER ========== -->
   <section id="Home">
+    <!-- <div class="bim-section-separator"></div> -->
     <div class="slider">
       <ul class="slides">
         <li>
@@ -58,7 +76,7 @@
               </div>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <img src="img/carousel/carousel21.jpg"> 
           <div class="caption center-align">
             <h3>FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
@@ -67,13 +85,14 @@
               <a class="waves-effect waves-light btn-large pulse">Prendre RDV</a>
             </div>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </section>
 
     <!-- ==========  SERVICES ========== -->
-    <section id="Service">x
+    <section id="Services">
+      <div class="bim-section-separator"></div>
       <h4 class="center-align">Nos Services</h4>
       <div id="bim-home-services" class="center-align row center">
         <div class="col s3">
@@ -129,18 +148,21 @@
 
     <!-- ==========  BIM ========== -->
     <section id="Bim">
+        <div class="bim-section-separator"></div>
         <h4 class="center-align">Le BIM</h4>
     </section>
     
 
     <!-- ==========  A propos de nous ========== -->
     <section id="Aboutus">
+        <div class="bim-section-separator"></div>        
         <h4 class="center-align">A propos de nous</h4>
     </section>
     
 
     <!-- ==========  Contact ========== -->
     <section id="Contact">
+      <div class="bim-section-separator"></div>              
       <h4 class="center-align">Contacter nous</h4>
       <div class="row parallax-container">
           <div class="parallax"><img src="img/bim-map.png"></div>
@@ -192,6 +214,7 @@
         </div>
     </section>
     <!-- ==========  Nos partenaires ========== -->
+    <div class="bim-section-separator"></div>
     <h4 class="center-align">Nos partenaires</h4>
     <div class="carousel">
         <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
@@ -203,7 +226,8 @@
         <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
         <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
       </div>
-    <!-- ==========  Contact ========== -->
+
+    <!-- ==========  Footer ========== -->
     <!-- <h4 class="center-align">Contacter nous</h4>
     <div class="parallax-container">
         <div class="parallax"><img src="img/contact.jpg"></div>
@@ -234,12 +258,6 @@
 			defaultLang: 'fr'
 		});
   </script>
-  
-  <!-- <script src="js/materialize.js"></script>
-  <script type="text/javascript" src="js/bubbles.js"></script>
-   <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script src="js/init.js"></script> -->
-
 </body>
 
 </html>
