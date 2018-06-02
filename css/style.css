@@ -309,13 +309,62 @@ section#Home {
 
 .bim-social-network a span {
   padding-left: 15px;
+  /* color: white; */
+}
+
+.bim-social-network a span:hover {
+  color: #DD1C51;
+  cursor: pointer;
 }
 
 .page-footer .footer-copyright {
   background-color: #DD1C51;
 }
+
 .back-top {
   top: -52px;
   float: right;
   cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+
+#bim-service-header {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+/*Nav tab*/
+
+.bim-nav-tab {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 10px;
+}
+
+.bim-nav-tab a {
+  display: inline-block;
+  color: white;
+  height: 60px;
+  width: 100%;
+  /* width: 300px; */
+  /* padding: 0px 22px; */
+  text-align: center;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(3, 169, 244);
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.bim-nav-tab a.active{
+  background-color: #DD1C51;
+}
+
+#bim-service-content{
+  margin-left: 100px;
 }
