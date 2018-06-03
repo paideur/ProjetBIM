@@ -6,6 +6,24 @@
       $(this).addClass('active');
     });
 
+    // $('#bim-service-content ul a').click(function () {
+    //   $(this).siblings('a').removeClass('active');
+    //   $(this).addClass('active');
+
+    //   var test= $('#bim-service-content');
+    //   // $(this).addClass('active');
+
+    // });
+    $('#bim-service-content ul a').click(function () {
+      $(this).siblings('a').removeClass('active');
+      var itemId = $(this).attr('id');
+      $(this).addClass('active');
+
+      $('.bim-tab-pane').siblings('div').removeClass('active');
+      $('div [for="' + itemId + '"] ').addClass('active');
+
+    });
+
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.carousel').carousel({

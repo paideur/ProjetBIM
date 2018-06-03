@@ -368,3 +368,25 @@ section#Home {
 #bim-service-content{
   margin-left: 100px;
 }
+.bim-tab-content{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.bim-tab-content>.bim-tab-pane {
+  display: none;
+  visibility: hidden;
+}
+.bim-tab-content>.active {
+  display: inline-block;
+  visibility: visible;
+}
+.bim-tab-pane{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.fade.in {
+  opacity: 1;
+}
