@@ -11,9 +11,9 @@ html,
 body {
   height: 100%;
   line-height: 2;
-  font-family: Muli, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  /* font-family: Muli, sans-serif; */
+  font-weight: 200;
+  font-size: 17px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -245,14 +245,21 @@ section#Home {
 
 #Bim p,
 #bim-description p,
-#Aboutus p {
+#BimAfrique p {
   margin-left: 100px;
   margin-right: 50px;
 }
 
+#Aboutus p {
+  margin-left: 100px;
+  margin-right: 50px;
+  color: white;
+  font-style: normal;
+  word-wrap: initial;
+}
+
 .bim-aboutus-content {
-  /* border: 1px solid red; */
-  /* backgroun                                                 d-color: #DD1C51; */
+  background-color: #DD1C51;
 }
 
 .bim-about {
@@ -272,6 +279,10 @@ section#Home {
 .bim-promo {
   width: 100%;
   overflow: hidden;
+}
+
+.bim-promo i {
+  color: white;
 }
 
 .page-footer .divider {
@@ -361,36 +372,37 @@ section#Home {
   padding-top: 15px;
 }
 
-.bim-nav-tab a.active{
+.bim-nav-tab a.active {
   background-color: #DD1C51;
 }
 
-#bim-service-content{
+#bim-service-content {
   margin-left: 100px;
 }
-.bim-tab-content{
+
+.bim-tab-content {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
+
 .bim-tab-content>.bim-tab-pane {
   display: none;
   visibility: hidden;
 }
+
 .bim-tab-content>.active {
   display: inline-block;
   visibility: visible;
 }
-.bim-tab-pane{
+
+.bim-tab-pane {
   display: inline-block;
   width: 100%;
   height: 100%;
   visibility: hidden;
 }
+
 .fade.in {
   opacity: 1;
-}
-
-#bim-aboutus {
-  background-color: #DD1C51;
 }
