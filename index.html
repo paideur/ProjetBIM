@@ -13,19 +13,19 @@
 
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#theMenu" class="text-dark bg-light">
+<body>
 
   <!-- ========== MENU ========== -->
   <div class="navbar-fixed">
     <nav>
         <div id="bim-topNav">
           <div class="bim-topNav-left valign-wrapper">
-              <a href="#" lang="fr" data-lang-token="topBim">Le BIM au service de l'energie !</a>
-              <a id="contact" href="#Contact" lang="fr">Contact</a>
+              <a href="#Home" class="js-scrollTo" lang="fr" data-lang-token="topBim">Le BIM au service de l'energie !</a>
+              <a id="contact" href="#Contact" class="js-scrollTo" lang="fr">Contact</a>
           </div>
           <div class="bim-topNav-right valign-wrapper">
               <i class="material-icons">email</i>
-              <a href="#Contact">contact@fasobim.com</a>
+              <a href="#Contact" class="js-scrollTo">contact@fasobim.com</a>
               <div id="bim-social-network">
                   <a target="_blank" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"></a>
                   <a target="_blank" href="#Contact"><img src="img/twitter.png"></a>
@@ -36,16 +36,16 @@
         <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <div class="bim-left-nav">
-            <a href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png"></a>
+            <a href="#Home" class="brand-logo js-scrollTo hide-on-med-and-down"><img src="img/logo.png"></a>
           </div>
           <div class="valign-wrapper bim-right-nav row hide-on-med-and-down">
             <ul class="bim-nav-list bim-nav-item valign-wrapper">
-              <a href="#Bim" class="waves-effect waves-light">BIM</a>
-              <a href="#Aboutus" class="waves-effect waves-light" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>              
-              <a href="#Services" class="waves-effect waves-light ">SERVICES</a>
-              <a href="#Contact" class="waves-effect waves-light">CONTACT</a>
-              <a href="#" class="waves-effect waves-light" onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"></a>
-              <a href="#" class="waves-effect waves-light" onclick="window.lang.change('en'); return false;"><img src="img/en.png"></a>
+              <a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a>
+              <a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>              
+              <a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a>
+              <a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a>
+              <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"></a>
+              <a href="#Lang" class="waves-effect waves-light"  onclick="window.lang.change('en'); return false;"><img src="img/en.png"></a>
             </ul>
           </div>
         </div>
@@ -104,7 +104,7 @@
    <section id="Bim">
       <div class="bim-section-separator"></div>
       <h4 class="center-align" lang="fr">BIM</h4>
-      <div class="row">
+      <!-- <div class="row">
           <p data-lang-token="parag1">
               Le BIM vient de l’anglais " Building Information Modeling " ou dans sa transcription française " Modélisation des données du bâtiment ". 
               C’est une technologie qui révolutionne la manière dont sont conçus ,planifiés ,créés et gérés les infrastructures,
@@ -132,9 +132,9 @@
               FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus de construction virtuelle et de la documentation. 
               Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger et réaliser vos modèles BIM.
           </p>
-      </div>
-      <!-- <div class="row">
-        <div id="bim-description" class="col s6" >
+      </div> -->
+      <div class="row">
+        <div id="bim-description" class="col s8" >
           <p data-lang-token="parag1">
               Le BIM vient de l’anglais " Building Information Modeling " ou dans sa transcription française " Modélisation des données du bâtiment ". 
               C’est une technologie qui révolutionne la manière dont sont conçus ,planifiés ,créés et gérés les infrastructures,
@@ -152,15 +152,15 @@
               Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger et réaliser vos modèles BIM.
           </p>
         </div>
-        <div class="col s4 valign-wrapper">
-            <div class="col s8 hide-on-small-only">
+        <div class="col s4 ">
+            <div class="col s12 hide-on-small-only">
                 <img class="responsive-img" src="img/bimDescription.jpg">
             </div>
         </div>
-      </div> -->
+      </div>
   </section>
 
-    <!-- ==========  A propos de nous ========== -->
+    <!-- ==========  NOUS , FasoBIM ========== -->
     <section id="Aboutus">
         <div class="bim-section-separator"></div>        
         <h4 class="center-align" lang="fr" data-lang-token="aproposNous">NOUS, FasoBIM</h4>
@@ -184,8 +184,8 @@
               <i class="material-icons bim-about">pin_drop</i>
               <p class="bim-about-caption">Localisation </p>
               <p class="light center">
-                  Nous sommes situé à Toulouse
-                  10 Rue marc chagall 31700 Blagnac, France
+                  Nous sommes situé dans la region Midi-Pyrénées
+                  <p>10 Rue marc chagall 31700 Blagnac, France</p>
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@
           </div>
       </div>
     </section>
-    
+
     <!-- ==========  SERVICES ========== -->
     <section id="Services">
       <div class="bim-section-separator"></div>
@@ -466,7 +466,7 @@
     <!-- ==========  Footer ========== -->
     <footer class="page-footer">
       <div class="container">
-          <a href="#" class="page-scroll btn-floating btn-large pink back-top waves-effect waves-light wow fadeInUp animated" data-section="#top" style="visibility: visible; animation-name: fadeInUp;">
+          <a href="#Home" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
             <i class="material-icons">expand_less</i>
           </a>
         <div class="row">
@@ -503,7 +503,6 @@
           <div class="col l2 s12">
               <h6 class="white-text">SUIVEZ NOUS</h6>
               <div class="divider"></div>
-              <!-- <p><a class="bim-links" href="#Bim">BIM</a></p> -->
               <p class="bim-social-network" ><a target="_blank" class="valign-wrapper" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"> <span>Facebook</span></a></p>
               <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="#Contact"><img src="img/twitter.png"><span>Twitter</span></a></p>
               <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"> <span>LinkedIn</span></a></p>
@@ -512,7 +511,7 @@
       </div>
       <div class="footer-copyright">
         <div class="container" style="text-align: center">
-          <p>© <script>new Date().getFullYear()</script> Copyright FasoBIM - All rights reserved</p>
+          <p>© <script>new Date();</script> 2018 Copyright FasoBIM - All rights reserved</p>
         </div>
       </div>
     </footer>
@@ -540,7 +539,7 @@
 		lang.dynamic('en', 'js/lang-switch/langpack/en.json');
 		lang.init({
 			defaultLang: 'fr'
-		});
+    });
   </script>
 </body>
 

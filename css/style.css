@@ -322,7 +322,7 @@ section#Home {
 }
 
 .back-top {
-  top: -52px;
+  margin-top: -52px;
   float: right;
   cursor: pointer;
 }
@@ -356,7 +356,7 @@ section#Home {
   margin: 1px;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgb(3, 169, 244);
+  background-color: #505a68;
   font-size: 14px;
   padding-top: 15px;
 }
@@ -389,4 +389,8 @@ section#Home {
 }
 .fade.in {
   opacity: 1;
+}
+
+#bim-aboutus {
+  background-color: #DD1C51;
 }

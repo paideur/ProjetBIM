@@ -1,19 +1,56 @@
 (function ($) {
   $(function () {
 
-    $('.nav-wrapper ul a').click(function () {
-      $(this).siblings('a').removeClass('active');
-      $(this).addClass('active');
+    // Get active menu link when scrolling
+    var sections = $('section'),
+      nav = $('nav'),
+      nav_height = nav.outerHeight();
+
+    $(window).on('scroll', function () {
+      var cur_pos = $(this).scrollTop();
+
+      sections.each(function () {
+        var top = $(this).offset().top - nav_height,
+          bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+          nav.find('a').removeClass('active');
+          sections.removeClass('active');
+
+          $(this).addClass('active');
+          nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+        }
+      });
     });
 
-    // $('#bim-service-content ul a').click(function () {
-    //   $(this).siblings('a').removeClass('active');
-    //   $(this).addClass('active');
+    // Smooth scroll when click on menu nav bar
+    $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate({
+        scrollTop: $(page).offset().top
+      }, speed); // Go
+      return false;
+    });
 
-    //   var test= $('#bim-service-content');
-    //   // $(this).addClass('active');
+    $('a').on('click', function () { // Au clic sur un élément
+      var itemLink = $(this).attr('href');
+      if (itemLink && itemLink !== '#Lang') {
+        $('.nav-wrapper ul a').siblings('a').removeClass('active');
+        $('.nav-wrapper ul a[href="' + itemLink + '"] ').addClass('active');
+      }
 
-    // });
+    });
+
+    $('.nav-wrapper ul a').click(function () {
+      var itemLink = $(this).attr('href');
+      if (itemLink !== '#Lang') {
+        $(this).siblings('a').removeClass('active');
+        $(this).addClass('active');
+      }
+
+    });
+
     $('#bim-service-content ul a').click(function () {
       $(this).siblings('a').removeClass('active');
       var itemId = $(this).attr('id');
@@ -21,7 +58,6 @@
 
       $('.bim-tab-pane').siblings('div').removeClass('active');
       $('div [for="' + itemId + '"] ').addClass('active');
-
     });
 
     $('.sidenav').sidenav();
