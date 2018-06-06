@@ -15,8 +15,20 @@ body {
   /* font-weight: 200; */
   font-size: 17px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
+/* Styles for Mobile <=600px */
+@media only screen and (max-width: 600px) {
+  /* body{
+    font-size: 12px;
+  } */
+  /* nav ul a {
+    font-size: 0.7rem;
+  } */
+}
+
+/* Styles for Mobile */
 @media only screen and (max-width: 1090px) {
   /* body{
     font-size: 12px;
@@ -41,8 +53,7 @@ ul#bim-mobile-view li#mobile-brand-logo {
 }
 
 .brand-logo {
-  width: 200px;
-  height: 110px;
+  position: relative !important;
 }
 
 nav .nav-wrapper i.material-icons {
@@ -183,7 +194,6 @@ section#Home {
 .bim-left-nav {
   float: left;
   padding-left: 35px;
-  /* width: 250px; */
   width: 30%;
   height: 110px;
 }
@@ -274,16 +284,7 @@ nav ul a:hover {
   height: 150px;
 }
 
-#Bim p,
-#bim-description p,
-#BimAfrique p {
-  margin-left: 100px;
-  margin-right: 50px;
-}
-
 #Aboutus p {
-  margin-left: 100px;
-  margin-right: 50px;
   color: white;
   font-style: normal;
   word-wrap: initial;
