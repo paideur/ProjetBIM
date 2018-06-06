@@ -33,6 +33,7 @@
       return false;
     });
 
+
     $('a').on('click', function () { // Au clic sur un élément
       var itemLink = $(this).attr('href');
       if (itemLink && itemLink !== '#Lang') {
@@ -42,6 +43,7 @@
 
     });
 
+    // Add active class when click on desktop menu
     $('.nav-wrapper ul a').click(function () {
       var itemLink = $(this).attr('href');
       if (itemLink !== '#Lang') {
@@ -51,6 +53,18 @@
 
     });
 
+    // Add active class when click on mobile menu
+    $('#bim-mobile-view li a').click(function () {
+      var itemLink = $(this).attr('href');
+      if (itemLink !== '#Lang') {
+        var test = $('#bim-mobile-view li').siblings('a');
+        $('#bim-mobile-view li a').removeClass('active');
+        $(this).addClass('active');
+      }
+
+    });
+
+    // Manage service events on click
     $('#bim-service-content ul a').click(function () {
       $(this).siblings('a').removeClass('active');
       var itemId = $(this).attr('id');

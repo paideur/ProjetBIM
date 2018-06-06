@@ -12,9 +12,18 @@ body {
   height: 100%;
   line-height: 2;
   /* font-family: Muli, sans-serif; */
-  font-weight: 200;
+  /* font-weight: 200; */
   font-size: 17px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1090px) {
+  /* body{
+    font-size: 12px;
+  } */
+  /* nav ul a {
+    font-size: 0.7rem;
+  } */
 }
 
 /* ---- NabBar -----*/
@@ -23,7 +32,7 @@ body {
   height: 110px;
 }
 
-ul#mobile-demo li#mobile-brand-logo {
+ul#bim-mobile-view li#mobile-brand-logo {
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   align-content: center;
@@ -36,13 +45,35 @@ ul#mobile-demo li#mobile-brand-logo {
   height: 110px;
 }
 
+nav .nav-wrapper i.material-icons {
+  font-size: 45px;
+}
+
 nav,
 .navbar-fixed {
   height: 110px;
 }
 
 .nav-wrapper {
-  background-color: white;
+  /* background-color: white; */
+  background-color: #F5F5F5;
+}
+
+.sidenav {
+  background-color: #F5F5F5;
+}
+
+#bim-mobile-view li a.active{
+  background-color: #DD1C51;
+  color: white;
+}
+
+.sidenav li > a:hover {
+  background-color: transparent;
+}
+
+.sidenav li a {
+  color: #DD1C51;
 }
 
 .sidenav-trigger {
@@ -152,12 +183,14 @@ section#Home {
 .bim-left-nav {
   float: left;
   padding-left: 35px;
-  width: 250px;
+  /* width: 250px; */
+  width: 30%;
   height: 110px;
 }
 
 .bim-right-nav {
   float: right;
+  width: 70%;
   padding-right: 15px;
   height: 110px;
 }
@@ -177,32 +210,30 @@ section#Home {
   padding-left: 10px;
 }
 
+nav ul a:hover {
+  background-color: transparent;
+}
+
 #bim-social-network a:hover {
   cursor: pointer;
 }
 
-.bim-nav-item a:hover,
-.bim-nav-item a.active {
-  background-color: #DD1C51;
-}
-
 .bim-nav-list a:hover,
 .bim-nav-list a.active {
-  color: #fff;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  border-bottom: 3px solid #DD1C51;
+  color: black;
 }
 
 .bim-nav-list a {
   display: inline-block;
-  color: #202020;
-  /* background-color: #eee; */
-  background-color: white;
+  /* color: #202020; */
+  color: #DD1C51;
   height: 60px;
-  padding: 0px 22px;
   text-align: center;
   margin: 4px;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1.2vw;
 }
 
 #contactContent {
@@ -348,6 +379,10 @@ section#Home {
 }
 
 /*Nav tab*/
+
+#bim-nav-wrapper {
+  border-bottom: 3px groove #F5F5F5;
+}
 
 .bim-nav-tab {
   margin: 0;

@@ -33,8 +33,8 @@
               </div>
           </div>
         </div>
-        <div class="nav-wrapper">
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div id="bim-nav-wrapper" class="nav-wrapper">
+          <a href="#" data-target="bim-mobile-view" class="sidenav-trigger"><i class="material-icons medium">menu</i></a>
           <div class="bim-left-nav">
             <a href="#Home" class="brand-logo js-scrollTo hide-on-med-and-down"><img src="img/logo.png"></a>
           </div>
@@ -53,12 +53,15 @@
       </nav>
     </div>
       
-    <ul class="sidenav" id="mobile-demo">      
+    <ul class="sidenav" id="bim-mobile-view">      
       <div id="mobile-brand-logo"><a href="#" class="smoothScroll"><img src="img/logo.png" style="padding-left: 20px"></a></div>
-      <li><a href="#Bim" class="smoothScroll">BIM</a></li>
-      <li><a href="#Services" class="smoothScroll">Services</a></li>
-      <li><a href="#FasoBim" class="smoothScroll">Nous, FasoBIM</a></li>
-      <li><a href="#Contact" class="smoothScroll">Contact</a></li>
+      <li><a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a></li>      
+      <li><a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a></li>              
+      <li><a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a></li>
+      <li><a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a></li>
+      <li><a href="#BimAfrique" class="waves-effect waves-light js-scrollTo">FasoBIM AFRIQUE</a></li>
+      <li><a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"> Francais</a></li>
+      <li><a href="#Lang" class="waves-effect waves-light"  onclick="window.lang.change('en'); return false;"><img src="img/en.png"> English</a></li>
     </ul>
 
   <!-- ========== HOME SLIDER ========== -->
@@ -461,44 +464,46 @@
           <a href="#Home" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
             <i class="material-icons">expand_less</i>
           </a>
-        <div class="row">
-          <div class="col l6 s12">
-            <h6 class="white-text">EN QUELQUES MOTS</h6>
-            <div class="divider"></div>
-            <p class="grey-text text-lighten-4">
-                FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise 
-                des processus de construction virtuelle et de la documentation. 
-                Les consultants FasoBIM, vous accompagne pour tout mettre en place, 
-                organiser, échanger et réaliser vos modèles BIM.
-            </p>
-          </div>
-          <div class="col l2 s12">
-              <h6 class="white-text">LANGUES</h6>
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h6 class="white-text">EN QUELQUES MOTS</h6>
               <div class="divider"></div>
-              <p class="valign-wrapper">
-                <div class="row bim-footer-lang">
-                  <img src="img/fr.png"> <span  href="#" onclick="window.lang.change('fr'); return false;" >Français</span>
-                </div>
-                <div class="row bim-footer-lang">
-                    <img src="img/en.png"> <span  href="#" onclick="window.lang.change('en'); return false;" >English</span>
-                </div>
+              <p class="grey-text text-lighten-4">
+                  FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise 
+                  des processus de construction virtuelle et de la documentation. 
+                  Les consultants FasoBIM, vous accompagne pour tout mettre en place, 
+                  organiser, échanger et réaliser vos modèles BIM.
               </p>
-          </div>
-          <div class="col l2 s12">
-              <h6 class="white-text">FASOBIM</h6>
-              <div class="divider"></div>
-              <p><a class="bim-links" href="#Bim">BIM</a></p>
-              <p><a class="bim-links" href="#Services">SERVICES</a></p>
-              <p><a class="bim-links" href="#Aboutus">NOUS,FASOBIM</a></p>
-              <p><a class="bim-links" href="#Contact">CONTACT</a></p>
-          </div>
-          <div class="col l2 s12">
-              <h6 class="white-text">SUIVEZ NOUS</h6>
-              <div class="divider"></div>
-              <p class="bim-social-network" ><a target="_blank" class="valign-wrapper" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"> <span>Facebook</span></a></p>
-              <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="#Contact"><img src="img/twitter.png"><span>Twitter</span></a></p>
-              <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"> <span>LinkedIn</span></a></p>
             </div>
+            <div class="col l2 s12">
+                <h6 class="white-text">LANGUES</h6>
+                <div class="divider"></div>
+                <p class="valign-wrapper">
+                  <div class="row bim-footer-lang">
+                    <img src="img/fr.png"> <span  href="#" onclick="window.lang.change('fr'); return false;" >Français</span>
+                  </div>
+                  <div class="row bim-footer-lang">
+                      <img src="img/en.png"> <span  href="#" onclick="window.lang.change('en'); return false;" >English</span>
+                  </div>
+                </p>
+            </div>
+            <div class="col l2 s12">
+                <h6 class="white-text">FASOBIM</h6>
+                <div class="divider"></div>
+                <p><a class="bim-links" href="#Bim">BIM</a></p>
+                <p><a class="bim-links" href="#Services">SERVICES</a></p>
+                <p><a class="bim-links" href="#Aboutus">NOUS,FASOBIM</a></p>
+                <p><a class="bim-links" href="#Contact">CONTACT</a></p>
+            </div>
+            <div class="col l2 s12">
+                <h6 class="white-text">SUIVEZ NOUS</h6>
+                <div class="divider"></div>
+                <p class="bim-social-network" ><a target="_blank" class="valign-wrapper" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"> <span>Facebook</span></a></p>
+                <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="#Contact"><img src="img/twitter.png"><span>Twitter</span></a></p>
+                <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"> <span>LinkedIn</span></a></p>
+              </div>
+          </div>
         </div>
       </div>
       <div class="footer-copyright">
