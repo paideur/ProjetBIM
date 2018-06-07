@@ -17,6 +17,7 @@ body {
 }
 
 /* Styles for Mobile <=600px */
+
 @media only screen and (max-width: 600px) {
   /* body{
     font-size: 12px;
@@ -27,6 +28,7 @@ body {
 }
 
 /* Styles for Tablette */
+
 @media only screen and (max-width: 1090px) {
   /* body{
     font-size: 12px;
@@ -72,12 +74,12 @@ nav,
   background-color: #F5F5F5;
 }
 
-#bim-mobile-view li a.active{
+#bim-mobile-view li a.active {
   background-color: #DD1C51;
   color: white;
 }
 
-.sidenav li > a:hover {
+.sidenav li>a:hover {
   background-color: transparent;
 }
 
@@ -372,11 +374,6 @@ nav ul a:hover {
   width: 100%;
 }
 
-#bim-service-header {
-  margin-left: 100px;
-  margin-right: 50px;
-}
-
 /*Nav tab*/
 
 #bim-nav-wrapper {
@@ -393,7 +390,7 @@ nav ul a:hover {
 .bim-nav-tab a {
   display: inline-block;
   color: white;
-  height: 60px;
+  height: 70px;
   width: 100%;
   /* width: 300px; */
   /* padding: 0px 22px; */
@@ -403,7 +400,11 @@ nav ul a:hover {
   cursor: pointer;
   background-color: #505a68;
   font-size: 14px;
-  padding-top: 15px;
+  padding-top: 25px;
+}
+
+#item-4 {
+  padding-top: 13px !important;
 }
 
 .bim-nav-tab a.active {
@@ -411,7 +412,7 @@ nav ul a:hover {
 }
 
 #bim-service-content {
-  margin-left: 100px;
+  margin-left: 15px;
 }
 
 .bim-tab-content {
@@ -439,4 +440,13 @@ nav ul a:hover {
 
 .fade.in {
   opacity: 1;
+}
+
+#bim-service-content-mobile li.active .collapsible-header {
+  color: white;
+  background-color: #DD1C51;
+}
+#bim-service-content-mobile .collapsible-header {
+  background-color: #505a68;
+  color: white;
 }

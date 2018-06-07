@@ -74,6 +74,8 @@
       $('div [for="' + itemId + '"] ').addClass('active');
     });
 
+    $('.collapsible').collapsible();
+    
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.carousel').carousel({

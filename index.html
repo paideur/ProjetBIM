@@ -18,51 +18,85 @@
   <!-- ========== MENU ========== -->
   <div class="navbar-fixed">
     <nav>
-        <div id="bim-topNav">
-          <div class="bim-topNav-left valign-wrapper">
-              <a href="#Home" class="js-scrollTo" lang="fr" data-lang-token="topBim">Le BIM au service de l'energie !</a>
-              <a id="contact" href="#Contact" class="js-scrollTo" lang="fr">Contact</a>
-          </div>
-          <div class="bim-topNav-right valign-wrapper">
-              <i class="material-icons">email</i>
-              <a href="#Contact" class="js-scrollTo">contact@fasobim.com</a>
-              <div id="bim-social-network">
-                  <a target="_blank" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"></a>
-                  <a target="_blank" href="#Contact"><img src="img/twitter.png"></a>
-                  <a target="_blank" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"></a>
-              </div>
+      <div id="bim-topNav">
+        <div class="bim-topNav-left valign-wrapper">
+          <a href="#Home" class="js-scrollTo" lang="fr" data-lang-token="topBim">Le BIM au service de l'energie !</a>
+          <a id="contact" href="#Contact" class="js-scrollTo" lang="fr">Contact</a>
+        </div>
+        <div class="bim-topNav-right valign-wrapper">
+          <i class="material-icons">email</i>
+          <a href="#Contact" class="js-scrollTo">contact@fasobim.com</a>
+          <div id="bim-social-network">
+            <a target="_blank" href="https://www.facebook.com/FasoBIM/">
+              <img src="img/facebook.png">
+            </a>
+            <a target="_blank" href="#Contact">
+              <img src="img/twitter.png">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/">
+              <img src="img/linkedin.png">
+            </a>
           </div>
         </div>
-        <div id="bim-nav-wrapper" class="nav-wrapper">
-          <a href="#" data-target="bim-mobile-view" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons medium">menu</i></a>
-          <div class="bim-left-nav">
-            <a href="#Home" class="brand-logo js-scrollTo hide-on-small-only"><img src="img/logo.png"></a>
-          </div>
-          <div class="valign-wrapper bim-right-nav row hide-on-small-only">
-            <ul class="bim-nav-list bim-nav-item valign-wrapper">
-              <a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a>
-              <a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>              
-              <a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a>
-              <a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a>
-              <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo">FasoBIM AFRIQUE</a>
-              <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"></a>
-              <a href="#Lang" class="waves-effect waves-light"  onclick="window.lang.change('en'); return false;"><img src="img/en.png"></a>
-            </ul>
-          </div>
+      </div>
+      <div id="bim-nav-wrapper" class="nav-wrapper">
+        <a href="#" data-target="bim-mobile-view" class="sidenav-trigger hide-on-med-and-up">
+          <i class="material-icons medium">menu</i>
+        </a>
+        <div class="bim-left-nav">
+          <a href="#Home" class="brand-logo js-scrollTo hide-on-small-only">
+            <img src="img/logo.png">
+          </a>
         </div>
-      </nav>
+        <div class="valign-wrapper bim-right-nav row hide-on-small-only">
+          <ul class="bim-nav-list bim-nav-item valign-wrapper">
+            <a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a>
+            <a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
+            <a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a>
+            <a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a>
+            <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo">FasoBIM AFRIQUE</a>
+            <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;">
+              <img src="img/fr.png">
+            </a>
+            <a href="#Lang" class="waves-effect waves-light" onclick="window.lang.change('en'); return false;">
+              <img src="img/en.png">
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="bim-mobile-view">
+    <div id="mobile-brand-logo">
+      <a href="#" class="smoothScroll">
+        <img src="img/logo.png" style="padding-left: 20px">
+      </a>
     </div>
-      
-    <ul class="sidenav" id="bim-mobile-view">      
-      <div id="mobile-brand-logo"><a href="#" class="smoothScroll"><img src="img/logo.png" style="padding-left: 20px"></a></div>
-      <li><a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a></li>      
-      <li><a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a></li>              
-      <li><a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a></li>
-      <li><a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a></li>
-      <li><a href="#BimAfrique" class="waves-effect waves-light js-scrollTo">FasoBIM AFRIQUE</a></li>
-      <li><a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;"><img src="img/fr.png"> Francais</a></li>
-      <li><a href="#Lang" class="waves-effect waves-light"  onclick="window.lang.change('en'); return false;"><img src="img/en.png"> English</a></li>
-    </ul>
+    <li>
+      <a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a>
+    </li>
+    <li>
+      <a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
+    </li>
+    <li>
+      <a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a>
+    </li>
+    <li>
+      <a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a>
+    </li>
+    <li>
+      <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo">FasoBIM AFRIQUE</a>
+    </li>
+    <li>
+      <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;">
+        <img src="img/fr.png"> Francais</a>
+    </li>
+    <li>
+      <a href="#Lang" class="waves-effect waves-light" onclick="window.lang.change('en'); return false;">
+        <img src="img/en.png"> English</a>
+    </li>
+  </ul>
 
   <!-- ========== HOME SLIDER ========== -->
   <section id="Home">
@@ -70,18 +104,18 @@
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="img/carousel/carousel5.png"> 
+          <img src="img/carousel/carousel5.png">
           <div class="caption left-align">
             <div lang="fr" class="bim-slider-header" lang="fr" data-lang-token="bienVenueFasoBim">Bienvenue sur FasoBIM</div>
             <div class="bim-header-separator"></div>
             <h3 class="light grey-text text-lighten-3" lang="fr" data-lang-token="slogan1">FasoBIM vous accompagne dans la transition energetique du batiment</h3>
             <div class="bim-btn-contact">
-                <a class="waves-effect waves-light btn-large pulse" href="#Contact" lang="fr" data-lang-token="contact1">Contacter nous</a>
-              </div>
+              <a class="waves-effect waves-light btn-large pulse" href="#Contact" lang="fr" data-lang-token="contact1">Contacter nous</a>
+            </div>
           </div>
         </li>
         <li>
-          <img src="img/carousel/carousel4.png"> 
+          <img src="img/carousel/carousel4.png">
           <div class="caption center-align">
             <h3 lang="fr" data-lang-token="slogan2">FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
             <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5>
@@ -91,114 +125,131 @@
           </div>
         </li>
         <li>
-            <img src="img/carousel/carousel2.jpeg"> 
-            <div class="caption center-align">
-              <h3 lang="fr" data-lang-token="slogan2">FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
-              <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5>
-              <div class="bim-btn-contact">
-                <a class="waves-effect waves-light btn-large pulse" lang="fr" data-lang-token="contact2">Prendre RDV</a>
-              </div>
+          <img src="img/carousel/carousel2.jpeg">
+          <div class="caption center-align">
+            <h3 lang="fr" data-lang-token="slogan2">FasoBIM Consulting - la reference en matière d'innovation dans le batiment</h3>
+            <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5>
+            <div class="bim-btn-contact">
+              <a class="waves-effect waves-light btn-large pulse" lang="fr" data-lang-token="contact2">Prendre RDV</a>
             </div>
-          </li>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
 
-   <!-- ==========  BIM ========== -->
-   <section id="Bim">
-      <div class="bim-section-separator"></div>
-      <h4 class="center-align" lang="fr">BIM</h4>
-      <div class="container">
-        <div class="row">
-          <div id="bim-description" class="col s12 xl8" >
-            <p data-lang-token="parag1">
-                Le BIM vient de l’anglais " Building Information Modeling " ou dans sa transcription française " Modélisation des données du bâtiment ". 
-                C’est une technologie qui révolutionne la manière dont sont conçus ,planifiés ,créés et gérés les infrastructures,
-                les bâtiments et les réseaux techniques.
-            </p>
-            <p data-lang-token="parag2">
-                Le BIM, c'est surtout des méthodes de travail et une maquette numérique paramétrique 3D qui contient des données intelligentes et structurées.
-                Plus qu’un outil ou un logiciel, le désigne un processus permettant aux professionnels de l'architecture, 
-                de l'ingénierie et de la construction les informations et les outils nécessaires pour planifier, concevoir, 
-                construire et gérer plus efficacement des bâtiments et des infrastructures.. La maquette numérique en 3D décrit de façon détaillée les composants de l’ouvrage, 
-                données ensuite partagées entre les différents acteurs.
-            </p>
-            <p data-lang-token="parag3">
-                FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus de construction virtuelle et de la documentation. 
-                Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger et réaliser vos modèles BIM.
-            </p>
-          </div>
-          <div class="col s12 l4 xl4">
-              <img class="responsive-img"  src="img/bimDescription.png">
-          </div>
+  <!-- ==========  BIM ========== -->
+  <section id="Bim">
+    <div class="bim-section-separator"></div>
+    <h4 class="center-align" lang="fr">BIM</h4>
+    <div class="container">
+      <div class="row">
+        <div id="bim-description" class="col s12 xl8">
+          <p data-lang-token="parag1">
+            Le BIM vient de l’anglais " Building Information Modeling " ou dans sa transcription française " Modélisation des données
+            du bâtiment ". C’est une technologie qui révolutionne la manière dont sont conçus ,planifiés ,créés et gérés
+            les infrastructures, les bâtiments et les réseaux techniques.
+          </p>
+          <p data-lang-token="parag2">
+            Le BIM, c'est surtout des méthodes de travail et une maquette numérique paramétrique 3D qui contient des données intelligentes
+            et structurées. Plus qu’un outil ou un logiciel, le désigne un processus permettant aux professionnels de l'architecture,
+            de l'ingénierie et de la construction les informations et les outils nécessaires pour planifier, concevoir, construire
+            et gérer plus efficacement des bâtiments et des infrastructures.. La maquette numérique en 3D décrit de façon
+            détaillée les composants de l’ouvrage, données ensuite partagées entre les différents acteurs.
+          </p>
+          <p data-lang-token="parag3">
+            FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus de construction virtuelle
+            et de la documentation. Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger
+            et réaliser vos modèles BIM.
+          </p>
         </div>
+        <div class="col s12 l4 xl4">
+          <img class="responsive-img" src="img/bimDescription.png">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ==========  Nos partenaires ========== -->
   <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
   <div class="carousel hide-on-med-and-down">
-      <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-      <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-      <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-      <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-    </div>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+  </div>
 
-    <!-- ==========  NOUS , FasoBIM ========== -->
-    <section id="Aboutus">
-        <div class="bim-section-separator"></div>        
-        <h4 class="center-align" lang="fr" data-lang-token="aproposNous">NOUS, FasoBIM</h4>
-        
-        <div class="bim-aboutus-content">
-        <div class="container">
-          <div id="bim-aboutus" class="row">
-            <div class="col xl12 s12 l12">
-              <p>
-                  FasoBIM fut créé en Juillet 2017 par Fabrice YANGANÉ, Ingénieur Génie Civil passionné par le domaine des nouvelles technologies 
-                  et des processus innovants dans l’environnement du BIM pour l’industrie du Bâtiment. 
-              </p>
-              <p>
-                  L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. 
-                  Constitué d’une équipe jeune et dynamique, FasoBIM accompagne les professionnels du bâtiment dans la compréhension
-                  et le déploiement du BIM sur vos projets ou dans votre entreprise. Notre raison d’être est la satisfaction de nos 
-                  clients qui seront toujours au cœur de nos préoccupations
-              </p>
+  <!-- ==========  NOUS , FasoBIM ========== -->
+  <section id="Aboutus">
+    <div class="bim-section-separator"></div>
+    <h4 class="center-align" lang="fr" data-lang-token="aproposNous">NOUS, FasoBIM</h4>
+
+    <div class="bim-aboutus-content">
+      <div class="container">
+        <div id="bim-aboutus" class="row">
+          <div class="col xl12 s12 l12">
+            <p>
+              FasoBIM fut créé en Juillet 2017 par Fabrice YANGANÉ, Ingénieur Génie Civil passionné par le domaine des nouvelles technologies
+              et des processus innovants dans l’environnement du BIM pour l’industrie du Bâtiment.
+            </p>
+            <p>
+              L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. Constitué d’une équipe jeune
+              et dynamique, FasoBIM accompagne les professionnels du bâtiment dans la compréhension et le déploiement du
+              BIM sur vos projets ou dans votre entreprise. Notre raison d’être est la satisfaction de nos clients qui seront
+              toujours au cœur de nos préoccupations
+            </p>
           </div>
         </div>
         <!-- For destop and tablet -->
         <div class="row hide-on-small-only">
-            <div class="col s4 m4 l4 xl4 center">
-              <div class="center bim-promo">
-                <i class="material-icons bim-about">pin_drop</i>
-                <p class="bim-about-caption">Localisation </p>
-                <p class="light center">
-                    Nous sommes situé dans la region Midi-Pyrénées
-                    <p>10 Rue marc chagall 31700 Blagnac, France</p>
-                </p>
-              </div>
+          <div class="col s4 m4 l4 xl4 center">
+            <div class="center bim-promo">
+              <i class="material-icons bim-about">pin_drop</i>
+              <p class="bim-about-caption">Localisation </p>
+              <p class="light center">
+                Nous sommes situé dans la region Midi-Pyrénées
+                <p>10 Rue marc chagall 31700 Blagnac, France</p>
+              </p>
             </div>
-            <div class="col s4 m4 l4 xl4  center">
-              <div class="center bim-promo">
-                  <i class="material-icons bim-about">highlight</i>
-                  <p class="bim-about-caption">Expertise</p>
-                  <p class="light center">
-                    Solide compétence dans l’industrie du bâtiment et du BIM : BIM Model, BIM Management, BIM Maintenance.
-                  </p>
+          </div>
+          <div class="col s4 m4 l4 xl4  center">
+            <div class="center bim-promo">
+              <i class="material-icons bim-about">highlight</i>
+              <p class="bim-about-caption">Expertise</p>
+              <p class="light center">
+                Solide compétence dans l’industrie du bâtiment et du BIM : BIM Model, BIM Management, BIM Maintenance.
+              </p>
             </div>
+          </div>
+          <div class="col s4 m4 l4 xl4  center">
+            <div class="center bim-promo">
+              <i class="material-icons bim-about">insert_emoticon</i>
+              <p class="bim-about-caption">Satisfaction</p>
+              <p class="light center">
+                Contactez nous, nos experts sont à votre écoute pour une entière satisfaction
+              </p>
             </div>
-            <div class="col s4 m4 l4 xl4  center">
-              <div class="center bim-promo">
-                  <i class="material-icons bim-about">insert_emoticon</i>
-                  <p class="bim-about-caption">Satisfaction</p>
-                  <p class="light center">
-                    Contactez nous, nos experts sont à votre écoute pour une entière satisfaction
-                  </p>
-              </div>
-            </div>
+          </div>
         </div>
 
         <!-- Only for mobile -->
@@ -209,8 +260,8 @@
                 <i class="material-icons bim-about">pin_drop</i>
                 <p class="bim-about-caption">Localisation </p>
                 <p class="light center">
-                    Nous sommes situé dans la region Midi-Pyrénées
-                    <p>10 Rue marc chagall 31700 Blagnac, France</p>
+                  Nous sommes situé dans la region Midi-Pyrénées
+                  <p>10 Rue marc chagall 31700 Blagnac, France</p>
                 </p>
               </div>
             </div>
@@ -218,340 +269,509 @@
           <div class="row">
             <div class="col s12 center">
               <div class="center bim-promo">
-                  <i class="material-icons bim-about">highlight</i>
-                  <p class="bim-about-caption">Expertise</p>
-                  <p class="light center">
-                    Solide compétence dans l’industrie du bâtiment et du BIM : BIM Model, BIM Management, BIM Maintenance.
-                  </p>
+                <i class="material-icons bim-about">highlight</i>
+                <p class="bim-about-caption">Expertise</p>
+                <p class="light center">
+                  Solide compétence dans l’industrie du bâtiment et du BIM : BIM Model, BIM Management, BIM Maintenance.
+                </p>
               </div>
             </div>
           </div>
           <div class="row">
-              <div class="col s12 center">
-                <div class="center bim-promo">
-                  <i class="material-icons bim-about">insert_emoticon</i>
-                  <p class="bim-about-caption">Satisfaction</p>
-                  <p class="light center">
-                    Contactez nous, nos experts sont à votre écoute pour une entière satisfaction
-                  </p>
-                </div>
+            <div class="col s12 center">
+              <div class="center bim-promo">
+                <i class="material-icons bim-about">insert_emoticon</i>
+                <p class="bim-about-caption">Satisfaction</p>
+                <p class="light center">
+                  Contactez nous, nos experts sont à votre écoute pour une entière satisfaction
+                </p>
               </div>
             </div>
-      </div>
+          </div>
+        </div>
 
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========  Nos partenaires ========== -->
-    <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
-    <div class="carousel hide-on-med-and-down">
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-      </div>
+  <!-- ==========  Nos partenaires ========== -->
+  <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
+  <div class="carousel hide-on-med-and-down">
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+  </div>
 
-    <!-- ==========  SERVICES ========== -->
-    <section id="Services">
-      <div class="bim-section-separator"></div>
-      <h4 class="center-align" lang="fr" data-lang-token="services"> Nos Services</h4>
-      <div class="container">
-        <p id="bim-service-header">FasoBIM développe des services numériques sur mesure selon les cahiers 
-        des charges que nous soumettent nos clients et les dernières avancées
-          en matière d’innovation dans le BIM et l’Energie :</p>
-      <div id="bim-service-content" class="row">
-        <div class="col s3" id="bim-service-items">
+  <!-- ==========  SERVICES ========== -->
+  <section id="Services">
+    <div class="bim-section-separator"></div>
+    <h4 class="center-align" lang="fr" data-lang-token="services"> Nos Services</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <p id="bim-service-header">FasoBIM développe des services numériques sur mesure selon les cahiers des charges que nous soumettent nos clients
+            et les dernières avancées en matière d’innovation dans le BIM et l’Energie :</p>
+        </div>
+      </div>
+      <!-- Service content for Desktop and tablet -->
+      <div id="bim-service-content" class="row hide-on-small-only">
+        <div class="col s4" id="bim-service-items">
           <ul class="row bim-nav-tab">
-            <a id="item-1" class="waves-effect waves-light active">MODELING</a>
+            <a id="item-1" class="waves-effect waves-light active">BIM MODEL</a>
             <a id="item-2" class="waves-effect waves-light">GESTION DE L'INFORMATION</a>
-            <a id="item-3" class="waves-effect waves-light">EXPLOITATION - MAINTENANCE</a>
+            <a id="item-3" class="waves-effect waves-light">BIM MAINTENANCE</a>
             <a id="item-4" class="waves-effect waves-light">ANALYSES ET CALCUL DE STRUCTURES</a>
           </ul>
         </div>
-        <div id ="bim-tab-content-id" class="col s9 bim-tab-content" >
+        <div id="bim-tab-content-id" class="col s8 bim-tab-content">
           <div class="bim-tab-pane fade in active" for="item-1">
-              <h6 lang="fr" data-lang-token=""> MODELING</h6>
-              <div class="divider"></div>
-              <div class="col s5">
+            <h6 lang="fr" data-lang-token=""> BIM MODEL</h6>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col m12 l5 xl5">
                 <p>
-                    Numérisation et mise en place de vos maquettes numériques paramétrique 3D contenant
-                    des données intelligentes et structurées. Avec des Ingénieurs de formation dans l’équipe,
-                    FasoBIM à également les bases techniques suffisantes pour prendre certaines décisions
-                      en autonomie lorsqu’il s’agira de modéliser des ouvrages réalisables sur le chantier.
+                  Numérisation et mise en place de vos maquettes numériques paramétrique 3D contenant des données intelligentes et structurées.
+                  Avec des Ingénieurs de formation dans l’équipe, FasoBIM a également les bases techniques suffisantes pour
+                  prendre certaines décisions en autonomie lorsqu’il s’agira de modéliser des ouvrages réalisables sur le
+                  chantier.
                 </p>
               </div>
-              <div class="col s7 valign-wrapper">
-                  <div class="hide-on-small-only">
-                      <img class="responsive-img" src="img/service/service1.png">
-                  </div>
+              <div class="col m12 l7 xl7 valign-wrapper">
+                <img class="responsive-img" src="img/service/service1.png">
               </div>
+            </div>
           </div>
           <div class="bim-tab-pane fade in" for="item-2">
             <h6 lang="fr" data-lang-token=""> GESTION DE L'INFORMATION</h6>
             <div class="divider"></div>
-            <div class="col s5">
-              <p>
-                  Mise en place d'une gestion de projet BIM. Définition des Rôles & Responsabilités,
-                  Documents BIM, Environnement Commun des Données pour tous les participants du projet.
-              </p>
-            </div>
-            <div class="col s6 valign-wrapper">
-                <div class="hide-on-small-only">
-                    <img class="responsive-img" src="img/service/service2.png">
-                </div>
+            <div class="row">
+              <div class="col m12 l5 xl5">
+                <p>
+                  Mise en place d'une gestion de projet BIM. Définition des Rôles & Responsabilités, Documents BIM, Environnement Commun des
+                  Données pour tous les participants du projet.
+                </p>
+              </div>
+              <div class="col m12 l7 xl7 valign-wrapper">
+                <img class="responsive-img" src="img/service/service2.png">
+              </div>
             </div>
           </div>
           <div class="bim-tab-pane fade in" for="item-3">
-            <h6 lang="fr" data-lang-token=""> EXPLOITATION - MAINTENANCE</h6>
+            <h6 lang="fr" data-lang-token=""> BIM MAINTENANCE</h6>
             <div class="divider"></div>
-            <div class="col s12">
-              <p>
-                  Notre ambition est de participer au développement d’une nouvelle offre de service globale
-                  pour les propriétaires du bâtiment. L’idée partagée avec le groupement d’experts avec lesquels nous travaillons,
-                  est de proposer aux gestionnaires de parc immobilier de réaliser dans le cadre des audits énergétiques 
-                  un plan d’améliorations pour maintenir la valeur de son bien et si possible l’accroître.
-              </p>
-              <p>
-                  La performance énergétique et le confort de son bâtiment restent au cœur des propositions, 
-                  cependant ils s’inscrivent dans une réflexion globale sur la gestion du patrimoine. 
-                  Ainsi, nous proposons d’élargir la réflexion du maître d’ouvrage en lui donnant la possibilité
-                    de connaître et ainsi de prévoir les travaux, l’entretien et les plus grosses rénovations de son bâtiment.
-              </p>
+            <div class="row">
+              <div class="col s12">
+                <p>
+                  Et si la véritable révolution du BIM c’était d’optimiser la maintenance des bâtiments. Nous sommes convaincus que le BIM-Maintenance,
+                  sera un défi majeur pour tous les professionnels.
+                </p>
+                <p>
+                  Notre ambition est de participer au développement d’une nouvelle offre de service globale pour les propriétaires du bâtiment.
+                  L’idée partagée avec le groupement d’experts avec lesquels nous travaillons, est de proposer aux gestionnaires
+                  de parc immobilier de réaliser dans le cadre des audits énergétiques un plan d’améliorations pour maintenir
+                  la valeur de son bien et si possible l’accroître.
+                </p>
+                <p>
+                  La performance énergétique et le confort de son bâtiment restent au cœur des propositions, cependant ils s’inscrivent dans
+                  une réflexion globale sur la gestion du patrimoine. Ainsi, nous proposons d’élargir la réflexion du maître
+                  d’ouvrage en lui donnant la possibilité de connaître et ainsi de prévoir les travaux, l’entretien et les
+                  plus grosses rénovations de son bâtiment.
+                </p>
+              </div>
             </div>
-            <div class="col s10 valign-wrapper">
-                <div class="hide-on-small-only">
-                    <img class="responsive-img" src="img/service/service3.png">
-                </div>
+            <div class="row">
+              <div class="col s12 valign-wrapper">
+                <img class="responsive-img" src="img/service/service3.png">
+              </div>
             </div>
           </div>
           <div class="bim-tab-pane fade in" for="item-4">
             <h6 lang="fr" data-lang-token=""> ANALYSES ET CALCUL DE STRUCTURES</h6>
             <div class="divider"></div>
-            <div class="col s5">
+            <div class="row">
+              <div class="col m12 l5 xl5">
+                <p>
+                  Spécialiste en matériaux, nous participons à l’avant-projet de la construction. À partir des plans de l'architecte, et avant
+                  le chiffrage du chantier, nous prenons en compte tous les facteurs (études géotechniques, qualité du sol,
+                  dimensions, performances techniques des matériaux, risques de séisme ou conditions climatiques...) pour
+                  définir la taille des différents éléments de la structure du bâtiment et la quantité de matériaux à utiliser.
+                </p>
+              </div>
+              <div class="col m12 l7 xl7 valign-wrapper" style="padding-top: 10px">
+                <img class="responsive-img" src="img/service/service4.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Service content for only mobile -->
+      <div id="bim-service-content-mobile" class="row hide-on-med-and-up">
+        <ul class="collapsible expandable">
+          <li class="active">
+            <div class="collapsible-header">BIM MODEL</div>
+            <div class="collapsible-body">
               <p>
-                  Spécialiste en matériaux, nous participons à l’avant-projet de la construction. 
-                  À partir des plans de l'architecte, et avant le chiffrage du chantier, 
-                  nous prenons en compte tous les facteurs (études géotechniques, qualité du sol,
-                    dimensions, performances techniques des matériaux, risques de séisme ou conditions climatiques...)
-                    pour définir la taille des différents éléments de la structure du bâtiment et la quantité
-                      de matériaux à utiliser.
+                Numérisation et mise en place de vos maquettes numériques paramétrique 3D contenant des données intelligentes et structurées.
+                Avec des Ingénieurs de formation dans l’équipe, FasoBIM a également les bases techniques suffisantes pour
+                prendre certaines décisions en autonomie lorsqu’il s’agira de modéliser des ouvrages réalisables sur le chantier.
               </p>
+              <div class="valign-wrapper">
+                <img class="responsive-img" src="img/service/service1.png">
+              </div>
             </div>
-            <div class="col s7 valign-wrapper">
-                <div class="hide-on-small-only">
-                    <img class="responsive-img" src="img/service/service4.png">
+          </li>
+          <li>
+            <div class="collapsible-header">GESTION DE L'INFORMATION</div>
+            <div class="collapsible-body">
+              <p>
+                Mise en place d'une gestion de projet BIM. Définition des Rôles & Responsabilités, Documents BIM, Environnement Commun des
+                Données pour tous les participants du projet.
+              </p>
+              <div class="valign-wrapper">
+                <img class="responsive-img" src="img/service/service2.png">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">BIM MAINTENANCE</div>
+            <div class="collapsible-body">
+              <p>
+                Et si la véritable révolution du BIM c’était d’optimiser la maintenance des bâtiments. Nous sommes convaincus que le BIM-Maintenance,
+                sera un défi majeur pour tous les professionnels.
+              </p>
+              <p>
+                Notre ambition est de participer au développement d’une nouvelle offre de service globale pour les propriétaires du bâtiment.
+                L’idée partagée avec le groupement d’experts avec lesquels nous travaillons, est de proposer aux gestionnaires
+                de parc immobilier de réaliser dans le cadre des audits énergétiques un plan d’améliorations pour maintenir
+                la valeur de son bien et si possible l’accroître.
+              </p>
+              <p>
+                La performance énergétique et le confort de son bâtiment restent au cœur des propositions, cependant ils s’inscrivent dans
+                une réflexion globale sur la gestion du patrimoine. Ainsi, nous proposons d’élargir la réflexion du maître
+                d’ouvrage en lui donnant la possibilité de connaître et ainsi de prévoir les travaux, l’entretien et les
+                plus grosses rénovations de son bâtiment.
+              </p>
+              <div class="valign-wrapper">
+                <img class="responsive-img" src="img/service/service3.png">
+              </div>
+            </div>
+
+          </li>
+
+          <li>
+            <div class="collapsible-header">ANALYSES ET CALCUL DE STRUCTURES</div>
+            <div class="collapsible-body">
+              <p>
+                Spécialiste en matériaux, nous participons à l’avant-projet de la construction. À partir des plans de l'architecte, et avant
+                le chiffrage du chantier, nous prenons en compte tous les facteurs (études géotechniques, qualité du sol,
+                dimensions, performances techniques des matériaux, risques de séisme ou conditions climatiques...) pour définir
+                la taille des différents éléments de la structure du bâtiment et la quantité de matériaux à utiliser.
+              </p>
+              <div class="valign-wrapper">
+                <img class="responsive-img" src="img/service/service4.png">
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ==========  Nos partenaires ========== -->
+  <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
+  <div class="carousel hide-on-med-and-down">
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+  </div>
+
+
+  <!-- ==========  Contact ========== -->
+  <section id="Contact">
+    <div class="bim-section-separator"></div>
+    <h4 class="center-align" lang="fr" data-lang-token="contacterNous">Contacter nous</h4>
+    <div class="row parallax-container" id="contactContent">
+      <div class="parallax">
+        <img src="img/bim-map.png">
+      </div>
+      <div class="col s4 bim-contact-image hide-on-small-only">
+        <img class="responsive-img" src="img/contact3.png">
+      </div>
+      <div class="col s7 bim-boxed-form">
+        <div class="row ">
+          <div class="row input-field col s6">
+            <i class="material-icons prefix">phone_forwarded</i>
+            <label lang="fr">(+33) 07.77.33.74.59</label>
+          </div>
+          <div class="row input-field col s6">
+            <i class="material-icons prefix">mail</i>
+            <label lang="fr">fabriceyangane@fasobim.com</label>
+          </div>
+        </div>
+
+        <div id="bim-contact-form">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix" lang="fr">Nom</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone" lang="fr">Telephone</label>
+            </div>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email" lang="fr">Email</label>
+                  <span class="helper-text" data-error="Check Email" data-success="right" lang="fr" data-lang-token="erreurMail">Entrer un email complet avec @</span>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1" lang="fr" data-lang-token="votreMessage">Votre message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row" style="margin-right:10px">
+            <button id="contactbutton" class="btn waves-effect btn-large waves-light right" type="submit" name="action" lang="fr">Envoyer message
+              <i class="material-icons right">send</i>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    </section>
-      
+  </section>
 
-   
-    
+  <!-- ==========  Nos partenaires ========== -->
+  <div class="bim-section-separator hide-on-med-and-down"></div>
+  <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
+  <div class="carousel hide-on-med-and-down">
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+  </div>
 
-    <!-- ==========  Nos partenaires ========== -->
-    <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
-    <div class="carousel hide-on-med-and-down">
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-      </div>
-    
-
-    <!-- ==========  Contact ========== -->
-    <section id="Contact">
-      <div class="bim-section-separator"></div>              
-      <h4 class="center-align" lang="fr" data-lang-token="contacterNous">Contacter nous</h4>
-      <div class="row parallax-container" id="contactContent">
-        <div class="parallax"><img src="img/bim-map.png"></div>
-        <div class="col s4 bim-contact-image hide-on-small-only">
-            <img class="responsive-img" src="img/contact3.png">
-        </div>
-        <div class="col s7 bim-boxed-form" >
-            <div class="row ">
-              <div class="row input-field col s6">
-                <i class="material-icons prefix">phone_forwarded</i>
-                <label lang="fr">(+33) 07.77.33.74.59</label>
-              </div>
-              <div class="row input-field col s6">
-                  <i class="material-icons prefix">mail</i>
-                  <label lang="fr">fabriceyangane@fasobim.com</label>
-                </div>
-            </div>
-
-          <div id="bim-contact-form">
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix" lang="fr">Nom</label>
-              </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone" lang="fr">Telephone</label>
-              </div>
-            </div>
-            <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                      <input id="email" type="email" class="validate">
-                      <label for="email" lang="fr">Email</label>
-                      <span class="helper-text" data-error="Check Email" data-success="right" lang="fr" data-lang-token="erreurMail">Entrer un email complet avec @</span>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">mode_edit</i>
-                      <textarea id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1" lang="fr" data-lang-token="votreMessage">Votre message</label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="row" style="margin-right:10px">
-                <button id="contactbutton" class="btn waves-effect btn-large waves-light right" type="submit" name="action" lang="fr">Envoyer message
-                    <i class="material-icons right">send</i>
-                </button>
-              </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- ==========  Nos partenaires ========== -->
-    <div class="bim-section-separator hide-on-med-and-down"></div>
-    <h4 class="center-align hide-on-med-and-down" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
-    <div class="carousel hide-on-med-and-down">
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-      </div>
-
-    <!-- ==========  FasoBIM Afrique ========== -->
-    <section id="BimAfrique">
-        <div class="bim-section-separator"></div>              
-        <h4 class="center-align" lang="fr" data-lang-token="contacterNous">FasoBIM Afrique</h4>
-        <div class="container">
-          <p>Le BTP en Afrique est un secteur difficilement perméable aux innovations, 
-            notre vision aujourd’hui est que l’innovation doit être considérée 
-            comme une question de survie. Si ce n’est pas le cas à court terme, 
-            négliger l’innovation sur le long terme peut s’avérer fatal. 
-            Fervent promoteur du BIM en Afrique, FasoBIM a pour ambition d’amorcer la digitalisation de 
-            l’industrie du bâtiment et innover dans ce secteur en Afrique. Et cette révolution a un nom : BIM.
-            
-          <p>
-              Avec une filiale implantée au Burkina Faso, 
-              FasoBIM BF accompagne les professionnels dans la transition numérique du bâtiment afin de faciliter 
-              la communication entre les acteurs et les phases des projets. Nous offrons des solutions innovantes 
-              pour faciliter le quotidien des bailleurs sociaux, des maîtres d’ouvrages, des syndics de copropriété 
-              mais également de la maîtrise d’œuvre qui réalise les études techniques.
-          </p>
-          <p>
-              Bientôt, FasoBIM bénéficiera d’un vaste réseau d’implantations enracinées localement : 
-              Afrique Occidentale, Afrique Centrale, Afrique du Nord et de l’est.
-          </p>
-          <div class="col s4 hide-on-small-only" style="padding-left: 20%">
-              <img class="responsive-img" src="img/fasobimAfrique.png">
-          </div>
-      </div>
-        </section>
-
-    <!-- ==========  Nos partenaires ========== -->
+  <!-- ==========  FasoBIM Afrique ========== -->
+  <section id="BimAfrique">
     <div class="bim-section-separator"></div>
-    <h4 class="center-align" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-        <a class="carousel-item" href="#one!"><img src="img/partenaires/enerbim.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img/partenaires/bimConseil.png"></a>
-        <a class="carousel-item" href="#three!"><img src="img/partenaires/africEtude.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="img/partenaires/fbr.jpeg"></a>
-      </div>
+    <h4 class="center-align" lang="fr" data-lang-token="contacterNous">FasoBIM Afrique</h4>
+    <div class="container">
+      <p>Le BTP en Afrique est un secteur difficilement perméable aux innovations, notre vision aujourd’hui est que l’innovation
+        doit être considérée comme une question de survie. Si ce n’est pas le cas à court terme, négliger l’innovation sur
+        le long terme peut s’avérer fatal. Fervent promoteur du BIM en Afrique, FasoBIM a pour ambition d’amorcer la digitalisation
+        de l’industrie du bâtiment et innover dans ce secteur en Afrique. Et cette révolution a un nom : BIM.
+
+        <p>
+          Avec une filiale implantée au Burkina Faso, FasoBIM BF accompagne les professionnels dans la transition numérique du bâtiment
+          afin de faciliter la communication entre les acteurs et les phases des projets. Nous offrons des solutions innovantes
+          pour faciliter le quotidien des bailleurs sociaux, des maîtres d’ouvrages, des syndics de copropriété mais également
+          de la maîtrise d’œuvre qui réalise les études techniques.
+        </p>
+        <p>
+          Bientôt, FasoBIM bénéficiera d’un vaste réseau d’implantations enracinées localement : Afrique Occidentale, Afrique Centrale,
+          Afrique du Nord et de l’est.
+        </p>
+        <div class="col s4 hide-on-small-only" style="padding-left: 20%">
+          <img class="responsive-img" src="img/fasobimAfrique.png">
+        </div>
+    </div>
+  </section>
+
+  <!-- ==========  Nos partenaires ========== -->
+  <div class="bim-section-separator"></div>
+  <h4 class="center-align" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
+  <div class="carousel">
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+    <a class="carousel-item" href="#one!">
+      <img src="img/partenaires/enerbim.jpg">
+    </a>
+    <a class="carousel-item" href="#two!">
+      <img src="img/partenaires/bimConseil.png">
+    </a>
+    <a class="carousel-item" href="#three!">
+      <img src="img/partenaires/africEtude.jpg">
+    </a>
+    <a class="carousel-item" href="#four!">
+      <img src="img/partenaires/fbr.jpeg">
+    </a>
+  </div>
 
 
-    <!-- ==========  Footer ========== -->
-    <footer class="page-footer">
+  <!-- ==========  Footer ========== -->
+  <footer class="page-footer">
+    <div class="container">
+      <a href="#Home" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
+        <i class="material-icons">expand_less</i>
+      </a>
       <div class="container">
-          <a href="#Home" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
-            <i class="material-icons">expand_less</i>
-          </a>
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h6 class="white-text">EN QUELQUES MOTS</h6>
-              <div class="divider"></div>
-              <p class="grey-text text-lighten-4">
-                  FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise 
-                  des processus de construction virtuelle et de la documentation. 
-                  Les consultants FasoBIM, vous accompagne pour tout mettre en place, 
-                  organiser, échanger et réaliser vos modèles BIM.
-              </p>
-            </div>
-            <div class="col l2 s12">
-                <h6 class="white-text">LANGUES</h6>
-                <div class="divider"></div>
-                <p class="valign-wrapper">
-                  <div class="row bim-footer-lang">
-                    <img src="img/fr.png"> <span  href="#" onclick="window.lang.change('fr'); return false;" >Français</span>
-                  </div>
-                  <div class="row bim-footer-lang">
-                      <img src="img/en.png"> <span  href="#" onclick="window.lang.change('en'); return false;" >English</span>
-                  </div>
-                </p>
-            </div>
-            <div class="col l2 s12">
-                <h6 class="white-text">FASOBIM</h6>
-                <div class="divider"></div>
-                <p><a class="bim-links" href="#Bim">BIM</a></p>
-                <p><a class="bim-links" href="#Services">SERVICES</a></p>
-                <p><a class="bim-links" href="#Aboutus">NOUS,FASOBIM</a></p>
-                <p><a class="bim-links" href="#Contact">CONTACT</a></p>
-            </div>
-            <div class="col l2 s12">
-                <h6 class="white-text">SUIVEZ NOUS</h6>
-                <div class="divider"></div>
-                <p class="bim-social-network" ><a target="_blank" class="valign-wrapper" href="https://www.facebook.com/FasoBIM/"><img src="img/facebook.png"> <span>Facebook</span></a></p>
-                <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="#Contact"><img src="img/twitter.png"><span>Twitter</span></a></p>
-                <p class="bim-social-network"><a target="_blank" class="valign-wrapper" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/"><img src="img/linkedin.png"> <span>LinkedIn</span></a></p>
+        <div class="row">
+          <div class="col l6 s12">
+            <h6 class="white-text">EN QUELQUES MOTS</h6>
+            <div class="divider"></div>
+            <p class="grey-text text-lighten-4">
+              FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus de construction virtuelle
+              et de la documentation. Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger
+              et réaliser vos modèles BIM.
+            </p>
+          </div>
+          <div class="col l2 s12">
+            <h6 class="white-text">LANGUES</h6>
+            <div class="divider"></div>
+            <p class="valign-wrapper">
+              <div class="row bim-footer-lang">
+                <img src="img/fr.png">
+                <span href="#" onclick="window.lang.change('fr'); return false;">Français</span>
               </div>
+              <div class="row bim-footer-lang">
+                <img src="img/en.png">
+                <span href="#" onclick="window.lang.change('en'); return false;">English</span>
+              </div>
+            </p>
+          </div>
+          <div class="col l2 s12">
+            <h6 class="white-text">FASOBIM</h6>
+            <div class="divider"></div>
+            <p>
+              <a class="bim-links" href="#Bim">BIM</a>
+            </p>
+            <p>
+              <a class="bim-links" href="#Services">SERVICES</a>
+            </p>
+            <p>
+              <a class="bim-links" href="#Aboutus">NOUS,FASOBIM</a>
+            </p>
+            <p>
+              <a class="bim-links" href="#Contact">CONTACT</a>
+            </p>
+          </div>
+          <div class="col l2 s12">
+            <h6 class="white-text">SUIVEZ NOUS</h6>
+            <div class="divider"></div>
+            <p class="bim-social-network">
+              <a target="_blank" class="valign-wrapper" href="https://www.facebook.com/FasoBIM/">
+                <img src="img/facebook.png">
+                <span>Facebook</span>
+              </a>
+            </p>
+            <p class="bim-social-network">
+              <a target="_blank" class="valign-wrapper" href="#Contact">
+                <img src="img/twitter.png">
+                <span>Twitter</span>
+              </a>
+            </p>
+            <p class="bim-social-network">
+              <a target="_blank" class="valign-wrapper" href="https://www.linkedin.com/in/fabrice-yangane-9a00a012a/">
+                <img src="img/linkedin.png">
+                <span>LinkedIn</span>
+              </a>
+            </p>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container" style="text-align: center">
-          <p>© <script>new Date();</script> 2018 Copyright FasoBIM - All rights reserved</p>
-        </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="text-align: center">
+        <p>©
+          <script>
+            new Date();
+          </script> 2018 Copyright FasoBIM - All rights reserved</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    
+
 
 
 
@@ -570,10 +790,10 @@
   <script type="text/javascript" src="js/smtpjs.js"></script>
 
   <script type="text/javascript">
-		var lang = new Lang();
-		lang.dynamic('en', 'js/lang-switch/langpack/en.json');
-		lang.init({
-			defaultLang: 'fr'
+    var lang = new Lang();
+    lang.dynamic('en', 'js/lang-switch/langpack/en.json');
+    lang.init({
+      defaultLang: 'fr'
     });
   </script>
 </body>
