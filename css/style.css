@@ -246,13 +246,7 @@ nav ul a:hover {
   font-size: 1.2vw;
 }
 
-#contactContent {
-  padding-left: 100px;
-  padding-top: 30px;
-}
-
 #bim-contact-form {
-  /* border: 1px solid red; */
   padding-top: 30px;
 }
 
@@ -261,22 +255,11 @@ nav ul a:hover {
   margin-top: 75px;
 }
 
-.bim-contact-text {
-  border: 1px solid red;
-  width: 100%;
-  height: 50px;
-  ;
-}
-
-.bim-contact-details {
-  width: 100%;
-  height: 100%;
-}
 
 .bim-boxed-form {
   position: relative;
-  padding-right: 30px;
-  border: 5px solid #DD1C51;
+  border: 2px solid #DD1C51;
+  border-radius: 7px;
   margin-bottom: 20px;
 }
 
