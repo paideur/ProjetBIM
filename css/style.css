@@ -255,7 +255,6 @@ nav ul a:hover {
   margin-top: 75px;
 }
 
-
 .bim-boxed-form {
   position: relative;
   border: 2px solid #DD1C51;
@@ -429,7 +428,18 @@ nav ul a:hover {
   color: white;
   background-color: #DD1C51;
 }
+
 #bim-service-content-mobile .collapsible-header {
   background-color: #505a68;
   color: white;
+}
+
+/* Test */
+
+#bim-slider-img {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
 }
