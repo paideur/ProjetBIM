@@ -1,6 +1,6 @@
 {
 	"token": {
-		"topBim": "Optimize the maintenance of your buildings with FasoBIM !",
+		"topBim": "Maintain your buildings with FasoBIM !",
 		"navFasoBIM": "ABOUT FasoBIM",
 		"fasoBIMAfrique": "FasoBIM Africa",
 		"bienVenueFasoBim": "Welcome on FasoBIM",
@@ -10,7 +10,7 @@
 		"sousSlogan2": "Energetic plan - Informations technologies - Optimisation",
 		"contact2": "Meet US",
 		"slogan3": "BIM to build tomorrow world !",
-		"parag1": "BIM stands for Building Information Modeling in English and can also be define as < Modélisation des Informations(ou données) du Bâtiment > in French.BIM is often equated with software or technology, more than a tool or software,It designates a process that allows all the actors of a project(project ownership, architects, engineers,construction companies, owners, operators, ...) to work collaboratively and remotely throughout the project lifecycle.",
+		"parag1": "BIM stands for Building Information Modeling in English and can also be define as 'Modélisation des Informations(ou données) du Bâtiment ' in French.BIM is often equated with software or technology, more than a tool or software,It designates a process that allows all the actors of a project(project ownership, architects, engineers,construction companies, owners, operators, ...) to work collaboratively and remotely throughout the project lifecycle.",
 		"parag2": "It is difficult to find a definition of BIM accepted by all. Nevertheless (or however), BIM is mainly working methods and a 3D parametric digital model that contains intelligent and structured data. These virtual 3D models are used throughout the design, construction and even use of a building. They make it possible to carry out analyzes and simulations (energetics, structural calculation, detections of conflicts, etc), controls (respect of standards, budget, etc) and visualizations.We believe that BIM is the major challenge of the next decade for all professionals,and it remains central to the future of the building economy.",
 		"parag3": "FasoBIM was created in July 2017 by Fabrice YANGANÉ, a Civil Engineer passionate about the field of new technologies and innovative processes in the BIM environment for the building industry.",
 		"parag4": "The growth of BIM is now unavoidable and irresistible in the construction industry.Made up of a young and dynamic team,FasoBIM bases its vision of the BIM on more than 3 years of experience and the perfect mastery of virtual construction and documentation processes.We assist building professionals in understanding and the deployment of BIM on your projects or in your company.Making customer satisfaction a priority,will always be the focus of our concerns.",
@@ -40,7 +40,8 @@
 		"afriqueParag2": "With a subsidiary based in Burkina Faso, FasoBIM BF supports professionals in the digital transition of the building to facilitate communication between actors and project phases.We also offer innovative solutions to facilitate the day - to - day life of social landlords,building owners,condominium managers and also the project management who carries out the technical studies.",
 		"afriqueParag3": "Soon, FasoBIM will benefit from a vast network of implantations rooted locally: West Africa,Central Africa,North Africa and East ",
 		"quelqueMots": "A FEW WORDS",
-		"choixLangues": "CHOOSE YOUR LANGUAGE",
+		"quelqueMotsContent":"FasoBIM bases its vision of the BIM on more than 3 years of experience and the perfect mastery of virtual construction and documentation processes. We assist building professionals in understanding and the deployment of BIM on your projects or in your company. ",
+		"choixLangues": "LANGUAGE",
 		"suivezNous": "FOLLOW US"
 	}
 }

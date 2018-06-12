@@ -56,6 +56,14 @@ ul#bim-mobile-view li#mobile-brand-logo {
   position: relative !important;
 }
 
+#brand-logo-mobile {
+  height: 110px;
+  width: 70%;
+  float: right;
+  margin-top: -40px;
+  padding-right: 20px;
+}
+
 nav .nav-wrapper i.material-icons {
   font-size: 45px;
 }
@@ -92,6 +100,10 @@ nav,
 }
 
 /* ---- SLIDER ---- */
+
+.slider .slides li .caption {
+  top: 5px !important;
+}
 
 section#Home {
   padding-top: 40px;
@@ -264,6 +276,10 @@ nav ul a:hover {
 
 .bim-section-separator {
   height: 150px;
+}
+
+.bim-section-home-separator {
+  height: 110px;
 }
 
 #Aboutus p {

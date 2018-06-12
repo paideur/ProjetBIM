@@ -20,7 +20,7 @@
     <nav>
       <div id="bim-topNav">
         <div class="bim-topNav-left valign-wrapper">
-          <a href="#Home" class="js-scrollTo" lang="fr" data-lang-token="topBim">Optimiser la maintenance de vos bâtiments avec FasoBIM !</a>
+          <a href="#" class="js-scrollTo" lang="fr" data-lang-token="topBim">Maintener vos bâtiments avec FasoBIM !</a>
           <a id="contact" href="#Contact" class="js-scrollTo" lang="fr">Contact</a>
         </div>
         <div class="bim-topNav-right valign-wrapper">
@@ -43,8 +43,12 @@
         <a href="#" data-target="bim-mobile-view" class="sidenav-trigger hide-on-med-and-up">
           <i class="material-icons medium">menu</i>
         </a>
-        <div class="bim-left-nav">
-          <a href="#Home" class="brand-logo js-scrollTo hide-on-small-only">
+        <a href="#" id="brand-logo-mobile" class="js-scrollTo hide-on-med-and-up">
+          <img  src="img/logo.png">
+        </a>
+
+        <div class="bim-left-nav hide-on-small-only">
+          <a href="#" class="brand-logo js-scrollTo hide-on-small-only">
             <img src="img/logo.png">
           </a>
         </div>
@@ -74,19 +78,19 @@
       </a>
     </div>
     <li>
-      <a href="#Bim" class="waves-effect waves-light js-scrollTo">BIM</a>
+      <a href="#Bim" class="sidenav-close waves-effect waves-light js-scrollTo">BIM</a>
     </li>
     <li>
-      <a href="#Aboutus" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
+      <a href="#Aboutus" class="waves-effect waves-light js-scrollTo sidenav-close" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
     </li>
     <li>
-      <a href="#Services" class="waves-effect waves-light js-scrollTo">SERVICES</a>
+      <a href="#Services" class="waves-effect waves-light js-scrollTo sidenav-close">SERVICES</a>
     </li>
     <li>
-      <a href="#Contact" class="waves-effect waves-light js-scrollTo">CONTACT</a>
+      <a href="#Contact" class="waves-effect waves-light js-scrollTo sidenav-close">CONTACT</a>
     </li>
     <li>
-      <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo" lang="fr" data-lang-token="fasoBIMAfrique">FasoBIM AFRIQUE</a>
+      <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo sidenav-close" lang="fr" data-lang-token="fasoBIMAfrique">FasoBIM AFRIQUE</a>
     </li>
     <li>
       <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;">
@@ -99,13 +103,13 @@
   </ul>
 
   <!-- ========== HOME SLIDER ========== -->
-  <section id="Home">
-    <!-- <div class="bim-section-separator"></div> -->
+  <section id="Home" class="hide-on-small-only">
+    <!-- <div class="bim-section-home-separator"></div> -->
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="img/carousel/carousel4.png">
-          <div class="caption left-align">
+          <img src="img/carousel/carousel1.png">
+          <div class="container caption left-align">
             <div lang="fr" class="bim-slider-header" lang="fr" data-lang-token="bienVenueFasoBim">Bienvenue sur FasoBIM</div>
             <div class="bim-header-separator"></div>
             <h3 class="light grey-text text-lighten-3" lang="fr" data-lang-token="slogan1">FasoBIM vous accompagne dans le BIM et la transition numérique !</h3>
@@ -118,17 +122,15 @@
           <img class="responsive-img" src="img/carousel/carousel2.jpeg">
           <div class="caption center-align">
             <h3 lang="fr" data-lang-token="slogan2">Optimiser la maintenance de vos bâtiments avec FasoBIM !</h3>
-            <!-- <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5> -->
             <div class="bim-btn-contact">
               <a class="waves-effect waves-light btn-large pulse" href="#Contact" lang="fr" data-lang-token="contact2">Prendre RDV</a>
             </div>
           </div>
         </li>
         <li>
-          <img class="responsive-img" src="img/carousel/carousel6.png">
-          <div class="caption center-align">
+          <img class="responsive-img" src="img/carousel/carousel3.png">
+          <div class="caption right-align">
             <h3 lang="fr" data-lang-token="slogan3">Le BIM pour construire le monde de demain !</h3>
-            <!-- <h5 class="light grey-text text-lighten-3" lang="fr" data-lang-token="sousSlogan2">Plan strategique - Technologies numeriques - Optimisation</h5> -->
             <div class="bim-btn-contact">
               <a class="waves-effect waves-light btn-large pulse" lang="fr" data-lang-token="contact2">Prendre RDV</a>
             </div>
@@ -212,8 +214,8 @@
               et des processus innovants dans l’environnement du BIM pour l’industrie du Bâtiment.
             </p>
             <p lang="fr" data-lang-token="parag4">
-              <b>L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. Constitué
-                d’une équipe jeune et dynamique</b>, FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la
+              L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. Constitué
+                d’une équipe jeune et dynamique, FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la
               parfaite maîtrise des processus de construction virtuelle et de la documentation. Nous accompagnons les professionnels
               du bâtiment dans la compréhension et le déploiement du BIM sur vos projets ou dans votre entreprise. Notre
               raison d’être est la satisfaction de nos clients qui seront toujours au cœur de nos préoccupations
@@ -542,7 +544,7 @@
         <img src="img/bim-map.png">
       </div>
       <div class="col l4 xl4  bim-contact-image hide-on-med-and-down">
-        <img class="responsive-img" src="img/contact3.png">
+        <img class="responsive-img" src="img/contact2.jpg">
       </div>
       <div class="col s12 l7 xl7 bim-boxed-form">
         <div class="row ">
@@ -697,7 +699,7 @@
   <!-- ==========  Footer ========== -->
   <footer class="page-footer">
     <div class="container">
-      <a href="#Home" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
+      <a href="#" class="js-scrollTo btn-floating btn-large pink back-top waves-effect waves-light">
         <i class="material-icons">expand_less</i>
       </a>
       <div class="container">
@@ -705,7 +707,7 @@
           <div class="col l6 s12">
             <h6 class="white-text" lang="fr" data-lang-token="quelqueMots">EN QUELQUES MOTS</h6>
             <div class="divider"></div>
-            <p class="grey-text text-lighten-4">
+            <p class="grey-text text-lighten-4" lang="fr" data-lang-token="quelqueMotsContent">
               FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus de construction virtuelle
               et de la documentation. Les consultants FasoBIM, vous accompagne pour tout mettre en place, organiser, échanger
               et réaliser vos modèles BIM.

@@ -60,6 +60,8 @@
         var test = $('#bim-mobile-view li').siblings('a');
         $('#bim-mobile-view li a').removeClass('active');
         $(this).addClass('active');
+        // $('.sidenav').sidenav().close();
+
       }
 
     });
@@ -75,7 +77,7 @@
     });
 
     $('.collapsible').collapsible();
-    
+
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.carousel').carousel({
@@ -96,6 +98,7 @@
     $('.smoothscroll').init();
     $('.slider').slider({
       height: 500,
+      duration: 1500
     });
 
     $(".switch").find("input[type=checkbox]").on("change", function () {
