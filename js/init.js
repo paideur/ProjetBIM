@@ -60,10 +60,7 @@
         var test = $('#bim-mobile-view li').siblings('a');
         $('#bim-mobile-view li a').removeClass('active');
         $(this).addClass('active');
-        // $('.sidenav').sidenav().close();
-
       }
-
     });
 
     // Manage service events on click
