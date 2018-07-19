@@ -115,7 +115,7 @@
       var email = $('input#email').val();
       var message = $('textarea#message').val();
       var validEmail = validateEmail(email);
-      if (validateEmail && nom != '' && message != '') {
+      if (validEmail && nom != '' && message != '') {
         Email.send("forward_mail@fasobim.com",
           "contact@fasobim.com",
           "Support message",
@@ -127,7 +127,9 @@
           });
         viderChamp();
         envoyerMessageReponse(email);
-        alert('Message envoyé au support.')
+        alert('Message envoyé au support.');
+      }else{
+        alert('Votre saisie est incorrecte, veuillez reesayer.');
       }
 
     });
