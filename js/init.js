@@ -110,13 +110,52 @@
     });
 
     $("#contactbutton").on("click", function () {
-      Email.send("toussaintpahima@gmail.com",
-        "testweb@fasobim.com",
-        "This is a subject",
-        "this is the body", {
-          token: "083c3b59-11b8-4f62-8a60-dc3dabebc7f3"
-        });
+      var nom = $('input#nom').val();
+      var telephone = $('input#phone').val();
+      var email = $('input#email').val();
+      var message = $('textarea#message').val();
+      var validEmail = validateEmail(email);
+      if (validateEmail && nom != '' && message != '') {
+        Email.send("forward_mail@fasobim.com",
+          "contact@fasobim.com",
+          "Support message",
+          "<b>Nouveau Email de : </b><p/>" + nom +
+          "<p/><b>Email expediteur:</b><p/>" + email +
+          "<p/><b>Numero de telephone : </b><p/>" + telephone +
+          " <p/><b>Contenu du message:</b> <p/>" + message, {
+            token: "53bb547a-7d90-4505-ac5e-2af1752339f6"
+          });
+        viderChamp();
+        envoyerMessageReponse(email);
+        alert('Message envoyé au support.')
+      }
+
     });
+
+    function validateEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    function envoyerMessageReponse(email) {
+      Email.send("contact@fasobim.com",
+        email,
+        "Accusé de reception message",
+        "Bonjour cher(e) client(e),<p/>" +
+        "<p/>Nous accusons reception de votre message," +
+        "<p/>notre service support vous repondra très rapidement." +
+        " <p/>Bien cordialement." +
+        " <br/><b>L'equipe FasoBIM.</b>", {
+          token: "ae43ea7a-f37d-4323-bc9e-8202ea9d90c6"
+        });
+    }
+
+    function viderChamp() {
+      $('input#nom').val('');
+      $('input#phone').val('');
+      $('input#email').val('');
+      $('textarea#message').val('');
+    }
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

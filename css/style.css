@@ -25,6 +25,13 @@ body {
   /* nav ul a {
     font-size: 0.7rem;
   } */
+  #bim-topNav {
+    position: relative;
+    font-size: 10px !important;
+    color: #ffffff;
+    background: #222222;
+    height: 40px;
+  }
 }
 
 /* Styles for Tablette */
