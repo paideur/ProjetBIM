@@ -9,13 +9,35 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 </head>
 
-<body>
+<body class="drawer drawer--left">
 
   <!-- ========== MENU ========== -->
+  <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <!-- <div id="mobile-brand-logo">
+            <a href="#" class="smoothScroll">
+              <img src="img/logo.png" style="padding-left: 20px">
+            </a>
+        </div> -->
+        <li id="bim-menu-item"><a href="#Bim" class="js-scrollTo">BIM</a></li>
+        <li><a href="#Aboutus" class=" js-scrollTo" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a></li>
+        <li><a href="#Services" class="  js-scrollTo">SERVICES</a></li>
+        <li><a href="#Contact" class="  js-scrollTo ">CONTACT</a></li>
+        <li><a href="#BimAfrique" class="  js-scrollTo " lang="fr" data-lang-token="fasoBIMAfrique">FasoBIM AFRIQUE</a></li>
+        <li><a href="#Lang"  onclick="window.lang.change('fr'); return false;">
+            <img src="img/fr.png"> Francais</a>
+        </li>
+        <li><a href="#Lang"  onclick="window.lang.change('en'); return false;">
+            <img src="img/en.png"> English</a>
+        </li>
+      </ul>
+    </nav>
+
   <div class="navbar-fixed">
     <nav>
       <div id="bim-topNav">
@@ -37,13 +59,12 @@
         </div>
       </div>
       <div id="bim-nav-wrapper" class="nav-wrapper">
-        <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
+        <a href="#" data-target="slide-out" class="drawer-toggle sidenav-trigger hide-on-med-and-up">
           <i class="material-icons medium">menu</i>
         </a>
         <a href="#" id="brand-logo-mobile" class="js-scrollTo hide-on-med-and-up">
-          <img  src="img/logo.png">
+          <img src="img/logo.png">
         </a>
-
         <div class="bim-left-nav hide-on-small-only">
           <a href="#" class="brand-logo js-scrollTo hide-on-small-only">
             <img src="img/logo.png">
@@ -67,37 +88,6 @@
       </div>
     </nav>
   </div>
-
-  <ul class="sidenav" id="slide-out">
-    <div id="mobile-brand-logo">
-      <a href="#" class="smoothScroll">
-        <img src="img/logo.png" style="padding-left: 20px">
-      </a>
-    </div>
-    <li>
-      <a href="#Bim" class="sidenav-close waves-effect waves-light js-scrollTo">BIM</a>
-    </li>
-    <li>
-      <a href="#Aboutus" class="waves-effect waves-light js-scrollTo sidenav-close" lang="fr" data-lang-token="navFasoBIM">NOUS, FasoBIM</a>
-    </li>
-    <li>
-      <a href="#Services" class="waves-effect waves-light js-scrollTo sidenav-close">SERVICES</a>
-    </li>
-    <li>
-      <a href="#Contact" class="waves-effect waves-light js-scrollTo sidenav-close">CONTACT</a>
-    </li>
-    <li>
-      <a href="#BimAfrique" class="waves-effect waves-light js-scrollTo sidenav-close" lang="fr" data-lang-token="fasoBIMAfrique">FasoBIM AFRIQUE</a>
-    </li>
-    <li>
-      <a href="#Lang" class="waves-effect waves-light " onclick="window.lang.change('fr'); return false;">
-        <img src="img/fr.png"> Francais</a>
-    </li>
-    <li>
-      <a href="#Lang" class="waves-effect waves-light" onclick="window.lang.change('en'); return false;">
-        <img src="img/en.png"> English</a>
-    </li>
-  </ul>
 
   <!-- ========== HOME SLIDER ========== -->
   <section id="Home" class="hide-on-small-only">
@@ -140,7 +130,7 @@
   <!-- ==========  BIM ========== -->
   <section id="Bim">
     <div class="bim-section-separator"></div>
-    <h4 class="center-align" lang="fr">BIM</h4>
+    <h4 class="center-align" lang="fr" data-lang-token="bim">Le BIM</h4>
     <div class="container">
       <div class="row">
         <div id="bim-description" class="col s12 xl8">
@@ -211,11 +201,11 @@
               et des processus innovants dans l’environnement du BIM pour l’industrie du Bâtiment.
             </p>
             <p lang="fr" data-lang-token="parag4">
-              L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. Constitué
-                d’une équipe jeune et dynamique, FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la
-              parfaite maîtrise des processus de construction virtuelle et de la documentation. Nous accompagnons les professionnels
-              du bâtiment dans la compréhension et le déploiement du BIM sur vos projets ou dans votre entreprise. Notre
-              raison d’être est la satisfaction de nos clients qui seront toujours au cœur de nos préoccupations
+              L’essor du BIM est désormais incontournable et irrésistible dans l’industrie de la construction. Constitué d’une équipe jeune
+              et dynamique, FasoBIM fonde sa vision du BIM sur plus de 3 ans d’expérience de la parfaite maîtrise des processus
+              de construction virtuelle et de la documentation. Nous accompagnons les professionnels du bâtiment dans la
+              compréhension et le déploiement du BIM sur vos projets ou dans votre entreprise. Notre raison d’être est la
+              satisfaction de nos clients qui seront toujours au cœur de nos préoccupations
             </p>
           </div>
         </div>
@@ -665,7 +655,7 @@
   <!-- ==========  Nos partenaires ========== -->
   <div class="bim-section-separator"></div>
   <h4 class="center-align" lang="fr" data-lang-token="partenaires">Les partenaires FasoBIM</h4>
-  <div class="carousel">
+  <div class="carousel valign-wrapper">
     <a class="carousel-item" href="#one!">
       <img src="img/partenaires/enerbim.jpg">
     </a>
@@ -789,6 +779,9 @@
   <!-- <script type="text/javascript" src="js/bubbles.js"></script> -->
   <script type="text/javascript" src="js/smoothscroll.js"></script>
   <script type="text/javascript" src="js/smtpjs.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 
   <script type="text/javascript">
     var lang = new Lang();

@@ -80,22 +80,30 @@ nav,
   height: 110px;
 }
 
+/* .navbar-fixed {
+  position: static !important;
+} */
+
+#bim-menu-item {
+  padding-top: 150px;
+}
+
 .nav-wrapper {
   /* background-color: white; */
   background-color: #F5F5F5;
 }
 
-.sidenav {
-  background-color: #F5F5F5;
+.drawer-nav{
+  background-color: #F5F5F5;  
 }
 
-#bim-mobile-view li a.active {
-  background-color: #DD1C51;
-  color: white;
-}
 
 .sidenav li>a:hover {
   background-color: transparent;
+}
+
+.drawer-nav li a {
+  color: #DD1C51;
 }
 
 .sidenav li a {
@@ -104,6 +112,14 @@ nav,
 
 .sidenav-trigger {
   color: #DD1C51;
+}
+
+nav ul li{
+  float: none !important;
+} 
+
+.drawer-menu-item {
+  padding: 5;
 }
 
 /* ---- SLIDER ---- */

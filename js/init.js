@@ -34,13 +34,9 @@
     });
 
 
-    $('a').on('click', function () { // Au clic sur un élément
-      var itemLink = $(this).attr('href');
-      if (itemLink && itemLink !== '#Lang') {
-        $('.nav-wrapper ul a').siblings('a').removeClass('active');
-        $('.nav-wrapper ul a[href="' + itemLink + '"] ').addClass('active');
-      }
-
+    // Add active class when click on mobile menu
+    $('.drawer-nav ul li a').click(function () {
+      $('.drawer').drawer('close');
     });
 
     // Add active class when click on desktop menu
@@ -51,16 +47,6 @@
         $(this).addClass('active');
       }
 
-    });
-
-    // Add active class when click on mobile menu
-    $('#bim-mobile-view li a').click(function () {
-      var itemLink = $(this).attr('href');
-      if (itemLink !== '#Lang') {
-        var test = $('#bim-mobile-view li').siblings('a');
-        $('#bim-mobile-view li a').removeClass('active');
-        $(this).addClass('active');
-      }
     });
 
     // Manage service events on click
@@ -75,7 +61,21 @@
 
     $('.collapsible').collapsible();
 
-    $('.sidenav').sidenav();
+    $('.drawer').drawer({
+      class: {
+        nav: 'drawer-nav',
+        toggle: 'drawer-toggle',
+        overlay: 'drawer-overlay',
+        open: 'drawer-open',
+        close: 'drawer-close',
+        dropdown: 'drawer-dropdown'
+      },
+      iscroll: {
+        mouseWheel: true,
+        preventDefault: false
+      },
+      showOverlay: true
+    });
     $('.parallax').parallax();
     $('.carousel').carousel({
       duration: 2,
